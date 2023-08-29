@@ -23,7 +23,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         
         createGameCards()
         
-//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "New Game", style: .plain, target: nil, action: nil)
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New Game", image: nil, target: self, action: #selector(newGame))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset cards", style: .plain, target: self, action: #selector(createGameCards))
     }
@@ -68,19 +67,12 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         openCardCell.append(cell)
             let path = cards[indexPath.item]
             
-            path.isOpen = true
+            
             path.status = .open
+            
             pressCard(indexPath: indexPath)
-            
             path.change()
-            
-            test(indexPath: indexPath)
-            
-//            for card in cards {
-//                print("Press \(card.status)")
-//            }
-            print("\(match.count / 2)")
-            print(cardsAmount!)
+            setBackSide()
             matchBothSide()
             allMatch()
         }
@@ -99,16 +91,14 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         collectionView.reloadData()
     }
     
-
-    
     func pressCard(indexPath: IndexPath) {
         let nameCardInArray = cards[indexPath.row].name
         let path = cards[indexPath.row]
         
-        if path.isOpen && !openCard.contains(nameCardInArray) {
+        if path.status == .open && !openCard.contains(nameCardInArray) {
             path.status = .open
             openCard.append(nameCardInArray)
-        } else if path.isOpen && openCard.contains(nameCardInArray) {
+        } else if path.status == .open && openCard.contains(nameCardInArray) {
             for card in cards where card.status == .open {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     card.status = .match
@@ -123,35 +113,27 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         collectionView.reloadData()
     }
 
-    
-    func test(indexPath: IndexPath) {
+    func setBackSide() {
         if openCard.count >= 72 {
             openCard.removeAll()
-            setBackSide()
-//            print("Currenst status set to \(path.status) backSide is \(String(describing: path.backSide))\n")
-        }
-    }
-    
-    func setBackSide() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            for card in self.cards where card.status != .match  {
-                card.status = .normal
-                card.backSide = UIImage(named: "question-mark.png")
-                self.openCardCell.removeAll()
-                self.collectionView.reloadData()
-//                print("set \(card.status)")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                for card in self.cards where card.status != .match  {
+                    card.status = .normal
+                    card.backSide = UIImage(named: "question-mark.png")
+                    self.openCardCell.removeAll()
+                    self.collectionView.reloadData()
+                }
             }
         }
     }
     
     func matchBothSide() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
-            for card in self.cards where card.status == .match  {
-                if match.count >= 1 {
+        if match.count >= 1 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
+                for card in self.cards where card.status == .match  {
                     card.backSide = UIImage(named: "match-log.png")
                     card.frontSide = UIImage(named: "match-log.png")
                     self.collectionView.reloadData()
-//                    print("set \(card.status)")
                 }
             }
         }
@@ -198,37 +180,3 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         return paths[0]
     }
 }
-
-//    func resetCard() {
-//        for card in cards {
-//            card.isOpen = false
-//            card.status = .normal
-//        }
-//        openCard.removeAll()
-//        openCardCell.removeAll()
-//    }
-    
-//    func setBackImageCell() {
-//        if openCardCell.count >= 2 {
-//            let firstCell = openCardCell[0]
-//            let secondCell = openCardCell[1]
-//        }
-//
-//    }
-
-//    func checkSameCard(name: String, indexPath: IndexPath) {
-//        for card in cards {
-//        if cards[indexPath.row].isOpen {
-//            card.status = .match
-//            collectionView.reloadData()
-//            //                print(card.status)
-//        }
-//        }
-//    }
-
-//@objc func newGame() {
-//    if let settingVC = self.storyboard?.instantiateViewController(identifier: "Setting") as? SettingViewController {
-//        settingVC.modalPresentationStyle = .fullScreen
-//        navigationController?.pushViewController(settingVC, animated: true)
-//    }
-//}
