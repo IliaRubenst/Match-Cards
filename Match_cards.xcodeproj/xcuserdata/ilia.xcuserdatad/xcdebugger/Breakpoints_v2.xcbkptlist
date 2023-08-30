@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3975DC21-994B-4D31-8B27-72A41FA188C4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Milestone28-30/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "pressCard(indexPath:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B - 49dee1e4dfe08f1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Milestone28_30.ViewController.pressCard(indexPath: Foundation.IndexPath, openCell: Milestone28_30.CardCell) -&gt; ()"
+                  moduleName = "Milestone28-30"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilia/Desktop/education/100DaysHack/Milestone28-30/Milestone28-30/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B - 49dee1e4dfe08f1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Milestone28_30.ViewController.pressCard(indexPath: Foundation.IndexPath, openCell: Milestone28_30.CardCell) -&gt; ()"
+                  moduleName = "Milestone28-30"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilia/Desktop/education/100DaysHack/Milestone28-30/Milestone28-30/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B - 49dee1e4dfe08f65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Milestone28_30.ViewController.pressCard(indexPath: Foundation.IndexPath, openCell: Milestone28_30.CardCell) -&gt; ()"
+                  moduleName = "Milestone28-30"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilia/Desktop/education/100DaysHack/Milestone28-30/Milestone28-30/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B - 49dee1e4dfe08f3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Milestone28_30.ViewController.pressCard(indexPath: Foundation.IndexPath, openCell: Milestone28_30.CardCell) -&gt; ()"
+                  moduleName = "Milestone28-30"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilia/Desktop/education/100DaysHack/Milestone28-30/Milestone28-30/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B - 49dee1e4dfe08d8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Milestone28_30.ViewController.pressCard(indexPath: Foundation.IndexPath, openCell: Milestone28_30.CardCell) -&gt; ()"
+                  moduleName = "Milestone28-30"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilia/Desktop/education/100DaysHack/Milestone28-30/Milestone28-30/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B - bd8b3f52c705f200"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Milestone28_30.ViewController.pressCard(indexPath: Foundation.IndexPath) -&gt; Milestone28_30.CardStatus"
+                  moduleName = "Milestone28-30"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilia/Desktop/education/100DaysHack/Milestone28-30/Milestone28-30/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "20D6BAF5-5E50-4506-BF90-CCC81AC8F71B - bd8b3f52c705f26d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Milestone28_30.ViewController.pressCard(indexPath: Foundation.IndexPath) -&gt; Milestone28_30.CardStatus"
+                  moduleName = "Milestone28-30"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilia/Desktop/education/100DaysHack/Milestone28-30/Milestone28-30/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8AA7A9A-F108-42A9-98F2-5081DABF8BA9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Milestone28-30/Models/CardCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CardCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49507D412A9CC992003F3A93 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507D402A9CC992003F3A93 /* SettingViewController.swift */; };
+		49507DBF2A9D24F3003F3A93 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49507DBE2A9D24F3003F3A93 /* background.jpg */; };
+		49507DC12A9D2D04003F3A93 /* question-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49507DC02A9D2D04003F3A93 /* question-mark.png */; };
+		49507DC32A9D354F003F3A93 /* FlipAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507DC22A9D354F003F3A93 /* FlipAnimation.swift */; };
+		495899272A96965E004D6E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495899262A96965E004D6E64 /* AppDelegate.swift */; };
+		495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495899282A96965E004D6E64 /* SceneDelegate.swift */; };
+		4958992B2A96965E004D6E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958992A2A96965E004D6E64 /* ViewController.swift */; };
+		4958992E2A96965E004D6E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4958992C2A96965E004D6E64 /* Main.storyboard */; };
+		495899302A96965E004D6E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4958992F2A96965E004D6E64 /* Assets.xcassets */; };
+		495899332A96965E004D6E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495899312A96965E004D6E64 /* LaunchScreen.storyboard */; };
+		49615A3D2A9DE3F10032CBBF /* match_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 49615A3C2A9DE3F10032CBBF /* match_log.png */; };
+		496E27C52A9719530090CA4A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C42A9719530090CA4A /* Card.swift */; };
+		496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C82A972CFB0090CA4A /* CardCell.swift */; };
+		498B97572A9B728100C15908 /* mantle-mnt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B972F2A9B728000C15908 /* mantle-mnt-logo.png */; };
+		498B97582A9B728100C15908 /* maker-mkr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97302A9B728000C15908 /* maker-mkr-logo.png */; };
+		498B97592A9B728100C15908 /* bitcoin-cash-bch-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97312A9B728000C15908 /* bitcoin-cash-bch-logo.png */; };
+		498B975A2A9B728100C15908 /* near-protocol-near-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97322A9B728000C15908 /* near-protocol-near-logo.png */; };
+		498B975B2A9B728100C15908 /* vechain-vet-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97332A9B728000C15908 /* vechain-vet-logo.png */; };
+		498B975C2A9B728100C15908 /* solana-sol-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97342A9B728000C15908 /* solana-sol-logo.png */; };
+		498B975D2A9B728100C15908 /* tether-usdt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97352A9B728000C15908 /* tether-usdt-logo.png */; };
+		498B975E2A9B728100C15908 /* bitcoin-btc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97362A9B728000C15908 /* bitcoin-btc-logo.png */; };
+		498B975F2A9B728100C15908 /* quant-qnt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97372A9B728000C15908 /* quant-qnt-logo.png */; };
+		498B97602A9B728100C15908 /* wrapped-bitcoin-wbtc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97382A9B728000C15908 /* wrapped-bitcoin-wbtc-logo.png */; };
+		498B97612A9B728100C15908 /* litecoin-ltc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97392A9B728000C15908 /* litecoin-ltc-logo.png */; };
+		498B97622A9B728100C15908 /* arbitrum-arb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973A2A9B728000C15908 /* arbitrum-arb-logo.png */; };
+		498B97632A9B728100C15908 /* uniswap-uni-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973B2A9B728000C15908 /* uniswap-uni-logo.png */; };
+		498B97642A9B728100C15908 /* aptos-apt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973C2A9B728000C15908 /* aptos-apt-logo.png */; };
+		498B97652A9B728100C15908 /* unus-sed-leo-leo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973D2A9B728000C15908 /* unus-sed-leo-leo-logo.png */; };
+		498B97672A9B728100C15908 /* okb-okb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973F2A9B728000C15908 /* okb-okb-logo.png */; };
+		498B97682A9B728100C15908 /* polygon-matic-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97402A9B728000C15908 /* polygon-matic-logo.png */; };
+		498B97692A9B728100C15908 /* cosmos-atom-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97412A9B728000C15908 /* cosmos-atom-logo.png */; };
+		498B976A2A9B728100C15908 /* polkadot-new-dot-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97422A9B728000C15908 /* polkadot-new-dot-logo.png */; };
+		498B976B2A9B728100C15908 /* dogecoin-doge-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97432A9B728000C15908 /* dogecoin-doge-logo.png */; };
+		498B976C2A9B728100C15908 /* chainlink-link-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97442A9B728000C15908 /* chainlink-link-logo.png */; };
+		498B976D2A9B728100C15908 /* multi-collateral-dai-dai-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97452A9B728000C15908 /* multi-collateral-dai-dai-logo.png */; };
+		498B976F2A9B728100C15908 /* ethereum-eth-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97472A9B728100C15908 /* ethereum-eth-logo.png */; };
+		498B97702A9B728100C15908 /* shiba-inu-shib-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97482A9B728100C15908 /* shiba-inu-shib-logo.png */; };
+		498B97712A9B728100C15908 /* avalanche-avax-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97492A9B728100C15908 /* avalanche-avax-logo.png */; };
+		498B97722A9B728100C15908 /* optimism-ethereum-op-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974A2A9B728100C15908 /* optimism-ethereum-op-logo.png */; };
+		498B97732A9B728100C15908 /* xrp-xrp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974B2A9B728100C15908 /* xrp-xrp-logo.png */; };
+		498B97742A9B728100C15908 /* toncoin-ton-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974C2A9B728100C15908 /* toncoin-ton-logo.png */; };
+		498B97752A9B728100C15908 /* cronos-cro-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974D2A9B728100C15908 /* cronos-cro-logo.png */; };
+		498B97762A9B728100C15908 /* hedera-hbar-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974E2A9B728100C15908 /* hedera-hbar-logo.png */; };
+		498B97772A9B728100C15908 /* lido-dao-ldo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974F2A9B728100C15908 /* lido-dao-ldo-logo.png */; };
+		498B97782A9B728100C15908 /* internet-computer-icp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97502A9B728100C15908 /* internet-computer-icp-logo.png */; };
+		498B97792A9B728100C15908 /* monero-xmr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97512A9B728100C15908 /* monero-xmr-logo.png */; };
+		498B977A2A9B728100C15908 /* bnb-bnb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97522A9B728100C15908 /* bnb-bnb-logo.png */; };
+		498B977B2A9B728100C15908 /* tron-trx-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97532A9B728100C15908 /* tron-trx-logo.png */; };
+		498B977C2A9B728100C15908 /* filecoin-fil-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97542A9B728100C15908 /* filecoin-fil-logo.png */; };
+		498B977D2A9B728100C15908 /* stellar-xlm-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97552A9B728100C15908 /* stellar-xlm-logo.png */; };
+		498B977E2A9B728100C15908 /* cardano-ada-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97562A9B728100C15908 /* cardano-ada-logo.png */; };
+		498B97822A9B732700C15908 /* back_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97812A9B732700C15908 /* back_log.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49507D402A9CC992003F3A93 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		49507DBE2A9D24F3003F3A93 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		49507DC02A9D2D04003F3A93 /* question-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question-mark.png"; sourceTree = "<group>"; };
+		49507DC22A9D354F003F3A93 /* FlipAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipAnimation.swift; sourceTree = "<group>"; };
+		495899232A96965E004D6E64 /* Milestone28-30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone28-30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		495899262A96965E004D6E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		495899282A96965E004D6E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4958992A2A96965E004D6E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4958992D2A96965E004D6E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4958992F2A96965E004D6E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		495899322A96965E004D6E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		495899342A96965E004D6E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49615A3C2A9DE3F10032CBBF /* match_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = match_log.png; sourceTree = "<group>"; };
+		496E27C42A9719530090CA4A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		496E27C82A972CFB0090CA4A /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		498B972F2A9B728000C15908 /* mantle-mnt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mantle-mnt-logo.png"; sourceTree = "<group>"; };
+		498B97302A9B728000C15908 /* maker-mkr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maker-mkr-logo.png"; sourceTree = "<group>"; };
+		498B97312A9B728000C15908 /* bitcoin-cash-bch-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-cash-bch-logo.png"; sourceTree = "<group>"; };
+		498B97322A9B728000C15908 /* near-protocol-near-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near-protocol-near-logo.png"; sourceTree = "<group>"; };
+		498B97332A9B728000C15908 /* vechain-vet-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vechain-vet-logo.png"; sourceTree = "<group>"; };
+		498B97342A9B728000C15908 /* solana-sol-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solana-sol-logo.png"; sourceTree = "<group>"; };
+		498B97352A9B728000C15908 /* tether-usdt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tether-usdt-logo.png"; sourceTree = "<group>"; };
+		498B97362A9B728000C15908 /* bitcoin-btc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-btc-logo.png"; sourceTree = "<group>"; };
+		498B97372A9B728000C15908 /* quant-qnt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quant-qnt-logo.png"; sourceTree = "<group>"; };
+		498B97382A9B728000C15908 /* wrapped-bitcoin-wbtc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wrapped-bitcoin-wbtc-logo.png"; sourceTree = "<group>"; };
+		498B97392A9B728000C15908 /* litecoin-ltc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "litecoin-ltc-logo.png"; sourceTree = "<group>"; };
+		498B973A2A9B728000C15908 /* arbitrum-arb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arbitrum-arb-logo.png"; sourceTree = "<group>"; };
+		498B973B2A9B728000C15908 /* uniswap-uni-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uniswap-uni-logo.png"; sourceTree = "<group>"; };
+		498B973C2A9B728000C15908 /* aptos-apt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aptos-apt-logo.png"; sourceTree = "<group>"; };
+		498B973D2A9B728000C15908 /* unus-sed-leo-leo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unus-sed-leo-leo-logo.png"; sourceTree = "<group>"; };
+		498B973F2A9B728000C15908 /* okb-okb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okb-okb-logo.png"; sourceTree = "<group>"; };
+		498B97402A9B728000C15908 /* polygon-matic-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polygon-matic-logo.png"; sourceTree = "<group>"; };
+		498B97412A9B728000C15908 /* cosmos-atom-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosmos-atom-logo.png"; sourceTree = "<group>"; };
+		498B97422A9B728000C15908 /* polkadot-new-dot-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polkadot-new-dot-logo.png"; sourceTree = "<group>"; };
+		498B97432A9B728000C15908 /* dogecoin-doge-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dogecoin-doge-logo.png"; sourceTree = "<group>"; };
+		498B97442A9B728000C15908 /* chainlink-link-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chainlink-link-logo.png"; sourceTree = "<group>"; };
+		498B97452A9B728000C15908 /* multi-collateral-dai-dai-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multi-collateral-dai-dai-logo.png"; sourceTree = "<group>"; };
+		498B97472A9B728100C15908 /* ethereum-eth-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ethereum-eth-logo.png"; sourceTree = "<group>"; };
+		498B97482A9B728100C15908 /* shiba-inu-shib-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shiba-inu-shib-logo.png"; sourceTree = "<group>"; };
+		498B97492A9B728100C15908 /* avalanche-avax-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avalanche-avax-logo.png"; sourceTree = "<group>"; };
+		498B974A2A9B728100C15908 /* optimism-ethereum-op-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "optimism-ethereum-op-logo.png"; sourceTree = "<group>"; };
+		498B974B2A9B728100C15908 /* xrp-xrp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xrp-xrp-logo.png"; sourceTree = "<group>"; };
+		498B974C2A9B728100C15908 /* toncoin-ton-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toncoin-ton-logo.png"; sourceTree = "<group>"; };
+		498B974D2A9B728100C15908 /* cronos-cro-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cronos-cro-logo.png"; sourceTree = "<group>"; };
+		498B974E2A9B728100C15908 /* hedera-hbar-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hedera-hbar-logo.png"; sourceTree = "<group>"; };
+		498B974F2A9B728100C15908 /* lido-dao-ldo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lido-dao-ldo-logo.png"; sourceTree = "<group>"; };
+		498B97502A9B728100C15908 /* internet-computer-icp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "internet-computer-icp-logo.png"; sourceTree = "<group>"; };
+		498B97512A9B728100C15908 /* monero-xmr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monero-xmr-logo.png"; sourceTree = "<group>"; };
+		498B97522A9B728100C15908 /* bnb-bnb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bnb-bnb-logo.png"; sourceTree = "<group>"; };
+		498B97532A9B728100C15908 /* tron-trx-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tron-trx-logo.png"; sourceTree = "<group>"; };
+		498B97542A9B728100C15908 /* filecoin-fil-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filecoin-fil-logo.png"; sourceTree = "<group>"; };
+		498B97552A9B728100C15908 /* stellar-xlm-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stellar-xlm-logo.png"; sourceTree = "<group>"; };
+		498B97562A9B728100C15908 /* cardano-ada-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardano-ada-logo.png"; sourceTree = "<group>"; };
+		498B97812A9B732700C15908 /* back_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_log.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		495899202A96965E004D6E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49507D422A9CC9FC003F3A93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				496E27C42A9719530090CA4A /* Card.swift */,
+				496E27C82A972CFB0090CA4A /* CardCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49507D432A9CCA30003F3A93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49507DC22A9D354F003F3A93 /* FlipAnimation.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49507D442A9CCA41003F3A93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4958991A2A96965E004D6E64 = {
+			isa = PBXGroup;
+			children = (
+				495899252A96965E004D6E64 /* Milestone28-30 */,
+				495899242A96965E004D6E64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		495899242A96965E004D6E64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				495899232A96965E004D6E64 /* Milestone28-30.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495899252A96965E004D6E64 /* Milestone28-30 */ = {
+			isa = PBXGroup;
+			children = (
+				495899262A96965E004D6E64 /* AppDelegate.swift */,
+				495899282A96965E004D6E64 /* SceneDelegate.swift */,
+				49507D402A9CC992003F3A93 /* SettingViewController.swift */,
+				4958992A2A96965E004D6E64 /* ViewController.swift */,
+				4958992C2A96965E004D6E64 /* Main.storyboard */,
+				49507D422A9CC9FC003F3A93 /* Models */,
+				49507D432A9CCA30003F3A93 /* Views */,
+				49507D442A9CCA41003F3A93 /* Controllers */,
+				4958992F2A96965E004D6E64 /* Assets.xcassets */,
+				495899312A96965E004D6E64 /* LaunchScreen.storyboard */,
+				495899342A96965E004D6E64 /* Info.plist */,
+				498093302A97494400AE8F33 /* Content */,
+			);
+			path = "Milestone28-30";
+			sourceTree = "<group>";
+		};
+		498093302A97494400AE8F33 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				498B973C2A9B728000C15908 /* aptos-apt-logo.png */,
+				498B973A2A9B728000C15908 /* arbitrum-arb-logo.png */,
+				498B97492A9B728100C15908 /* avalanche-avax-logo.png */,
+				498B97812A9B732700C15908 /* back_log.png */,
+				49507DBE2A9D24F3003F3A93 /* background.jpg */,
+				498B97362A9B728000C15908 /* bitcoin-btc-logo.png */,
+				498B97312A9B728000C15908 /* bitcoin-cash-bch-logo.png */,
+				498B97522A9B728100C15908 /* bnb-bnb-logo.png */,
+				498B97562A9B728100C15908 /* cardano-ada-logo.png */,
+				498B97442A9B728000C15908 /* chainlink-link-logo.png */,
+				498B97412A9B728000C15908 /* cosmos-atom-logo.png */,
+				498B974D2A9B728100C15908 /* cronos-cro-logo.png */,
+				498B97432A9B728000C15908 /* dogecoin-doge-logo.png */,
+				498B97472A9B728100C15908 /* ethereum-eth-logo.png */,
+				498B97542A9B728100C15908 /* filecoin-fil-logo.png */,
+				498B974E2A9B728100C15908 /* hedera-hbar-logo.png */,
+				498B97502A9B728100C15908 /* internet-computer-icp-logo.png */,
+				498B974F2A9B728100C15908 /* lido-dao-ldo-logo.png */,
+				498B97392A9B728000C15908 /* litecoin-ltc-logo.png */,
+				498B97302A9B728000C15908 /* maker-mkr-logo.png */,
+				498B972F2A9B728000C15908 /* mantle-mnt-logo.png */,
+				49615A3C2A9DE3F10032CBBF /* match_log.png */,
+				498B97512A9B728100C15908 /* monero-xmr-logo.png */,
+				498B97452A9B728000C15908 /* multi-collateral-dai-dai-logo.png */,
+				498B97322A9B728000C15908 /* near-protocol-near-logo.png */,
+				498B973F2A9B728000C15908 /* okb-okb-logo.png */,
+				498B974A2A9B728100C15908 /* optimism-ethereum-op-logo.png */,
+				498B97422A9B728000C15908 /* polkadot-new-dot-logo.png */,
+				498B97402A9B728000C15908 /* polygon-matic-logo.png */,
+				498B97372A9B728000C15908 /* quant-qnt-logo.png */,
+				49507DC02A9D2D04003F3A93 /* question-mark.png */,
+				498B97482A9B728100C15908 /* shiba-inu-shib-logo.png */,
+				498B97342A9B728000C15908 /* solana-sol-logo.png */,
+				498B97552A9B728100C15908 /* stellar-xlm-logo.png */,
+				498B97352A9B728000C15908 /* tether-usdt-logo.png */,
+				498B974C2A9B728100C15908 /* toncoin-ton-logo.png */,
+				498B97532A9B728100C15908 /* tron-trx-logo.png */,
+				498B973B2A9B728000C15908 /* uniswap-uni-logo.png */,
+				498B973D2A9B728000C15908 /* unus-sed-leo-leo-logo.png */,
+				498B97332A9B728000C15908 /* vechain-vet-logo.png */,
+				498B97382A9B728000C15908 /* wrapped-bitcoin-wbtc-logo.png */,
+				498B974B2A9B728100C15908 /* xrp-xrp-logo.png */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		495899222A96965E004D6E64 /* Milestone28-30 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495899372A96965E004D6E64 /* Build configuration list for PBXNativeTarget "Milestone28-30" */;
+			buildPhases = (
+				4958991F2A96965E004D6E64 /* Sources */,
+				495899202A96965E004D6E64 /* Frameworks */,
+				495899212A96965E004D6E64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Milestone28-30";
+			productName = "Milestone28-30";
+			productReference = 495899232A96965E004D6E64 /* Milestone28-30.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4958991B2A96965E004D6E64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					495899222A96965E004D6E64 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4958991E2A96965E004D6E64 /* Build configuration list for PBXProject "Milestone28-30" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4958991A2A96965E004D6E64;
+			productRefGroup = 495899242A96965E004D6E64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				495899222A96965E004D6E64 /* Milestone28-30 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		495899212A96965E004D6E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498B97742A9B728100C15908 /* toncoin-ton-logo.png in Resources */,
+				498B97652A9B728100C15908 /* unus-sed-leo-leo-logo.png in Resources */,
+				49615A3D2A9DE3F10032CBBF /* match_log.png in Resources */,
+				498B975D2A9B728100C15908 /* tether-usdt-logo.png in Resources */,
+				498B97732A9B728100C15908 /* xrp-xrp-logo.png in Resources */,
+				498B97782A9B728100C15908 /* internet-computer-icp-logo.png in Resources */,
+				49507DC12A9D2D04003F3A93 /* question-mark.png in Resources */,
+				498B97672A9B728100C15908 /* okb-okb-logo.png in Resources */,
+				498B97752A9B728100C15908 /* cronos-cro-logo.png in Resources */,
+				498B97822A9B732700C15908 /* back_log.png in Resources */,
+				498B977E2A9B728100C15908 /* cardano-ada-logo.png in Resources */,
+				49507DBF2A9D24F3003F3A93 /* background.jpg in Resources */,
+				498B97682A9B728100C15908 /* polygon-matic-logo.png in Resources */,
+				498B977D2A9B728100C15908 /* stellar-xlm-logo.png in Resources */,
+				498B977B2A9B728100C15908 /* tron-trx-logo.png in Resources */,
+				498B97592A9B728100C15908 /* bitcoin-cash-bch-logo.png in Resources */,
+				498B97692A9B728100C15908 /* cosmos-atom-logo.png in Resources */,
+				495899332A96965E004D6E64 /* LaunchScreen.storyboard in Resources */,
+				498B97582A9B728100C15908 /* maker-mkr-logo.png in Resources */,
+				498B977C2A9B728100C15908 /* filecoin-fil-logo.png in Resources */,
+				498B97572A9B728100C15908 /* mantle-mnt-logo.png in Resources */,
+				498B97632A9B728100C15908 /* uniswap-uni-logo.png in Resources */,
+				498B97702A9B728100C15908 /* shiba-inu-shib-logo.png in Resources */,
+				498B975C2A9B728100C15908 /* solana-sol-logo.png in Resources */,
+				498B97772A9B728100C15908 /* lido-dao-ldo-logo.png in Resources */,
+				498B97622A9B728100C15908 /* arbitrum-arb-logo.png in Resources */,
+				495899302A96965E004D6E64 /* Assets.xcassets in Resources */,
+				498B975A2A9B728100C15908 /* near-protocol-near-logo.png in Resources */,
+				498B97722A9B728100C15908 /* optimism-ethereum-op-logo.png in Resources */,
+				498B975F2A9B728100C15908 /* quant-qnt-logo.png in Resources */,
+				498B975E2A9B728100C15908 /* bitcoin-btc-logo.png in Resources */,
+				498B976C2A9B728100C15908 /* chainlink-link-logo.png in Resources */,
+				498B976A2A9B728100C15908 /* polkadot-new-dot-logo.png in Resources */,
+				498B976D2A9B728100C15908 /* multi-collateral-dai-dai-logo.png in Resources */,
+				4958992E2A96965E004D6E64 /* Main.storyboard in Resources */,
+				498B977A2A9B728100C15908 /* bnb-bnb-logo.png in Resources */,
+				498B976B2A9B728100C15908 /* dogecoin-doge-logo.png in Resources */,
+				498B97612A9B728100C15908 /* litecoin-ltc-logo.png in Resources */,
+				498B97792A9B728100C15908 /* monero-xmr-logo.png in Resources */,
+				498B97712A9B728100C15908 /* avalanche-avax-logo.png in Resources */,
+				498B97762A9B728100C15908 /* hedera-hbar-logo.png in Resources */,
+				498B976F2A9B728100C15908 /* ethereum-eth-logo.png in Resources */,
+				498B97642A9B728100C15908 /* aptos-apt-logo.png in Resources */,
+				498B97602A9B728100C15908 /* wrapped-bitcoin-wbtc-logo.png in Resources */,
+				498B975B2A9B728100C15908 /* vechain-vet-logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4958991F2A96965E004D6E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */,
+				49507DC32A9D354F003F3A93 /* FlipAnimation.swift in Sources */,
+				4958992B2A96965E004D6E64 /* ViewController.swift in Sources */,
+				495899272A96965E004D6E64 /* AppDelegate.swift in Sources */,
+				495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */,
+				496E27C52A9719530090CA4A /* Card.swift in Sources */,
+				49507D412A9CC992003F3A93 /* SettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4958992C2A96965E004D6E64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4958992D2A96965E004D6E64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		495899312A96965E004D6E64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495899322A96965E004D6E64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		495899352A96965E004D6E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		495899362A96965E004D6E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		495899382A96965E004D6E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Milestone28-30/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilia.Milestone28-30";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		495899392A96965E004D6E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Milestone28-30/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilia.Milestone28-30";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4958991E2A96965E004D6E64 /* Build configuration list for PBXProject "Milestone28-30" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495899352A96965E004D6E64 /* Debug */,
+				495899362A96965E004D6E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495899372A96965E004D6E64 /* Build configuration list for PBXNativeTarget "Milestone28-30" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495899382A96965E004D6E64 /* Debug */,
+				495899392A96965E004D6E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4958991B2A96965E004D6E64 /* Project object */;
+}
