@@ -7,65 +7,205 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492674662A9FC364009E0566 /* chainlink-link-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674092A9FC363009E0566 /* chainlink-link-logo.png */; };
+		492674672A9FC364009E0566 /* iota-miota-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926740A2A9FC363009E0566 /* iota-miota-logo.png */; };
+		492674682A9FC364009E0566 /* the-sandbox-sand-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926740B2A9FC363009E0566 /* the-sandbox-sand-logo.png */; };
+		492674692A9FC364009E0566 /* zilliqa-zil-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926740C2A9FC363009E0566 /* zilliqa-zil-logo.png */; };
+		4926746A2A9FC364009E0566 /* litecoin-ltc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926740D2A9FC363009E0566 /* litecoin-ltc-logo.png */; };
+		4926746B2A9FC364009E0566 /* compound-comp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926740E2A9FC363009E0566 /* compound-comp-logo.png */; };
+		4926746C2A9FC364009E0566 /* bone-shibaswap-bone-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926740F2A9FC363009E0566 /* bone-shibaswap-bone-logo.png */; };
+		4926746D2A9FC364009E0566 /* dogecoin-doge-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674102A9FC363009E0566 /* dogecoin-doge-logo.png */; };
+		4926746E2A9FC364009E0566 /* avalanche-avax-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674112A9FC363009E0566 /* avalanche-avax-logo.png */; };
+		4926746F2A9FC364009E0566 /* ecash-xec-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674122A9FC363009E0566 /* ecash-xec-logo.png */; };
+		492674702A9FC364009E0566 /* optimism-ethereum-op-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674132A9FC363009E0566 /* optimism-ethereum-op-logo.png */; };
+		492674712A9FC364009E0566 /* gemini-dollar-gusd-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674142A9FC363009E0566 /* gemini-dollar-gusd-logo.png */; };
+		492674722A9FC364009E0566 /* decentraland-mana-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674152A9FC363009E0566 /* decentraland-mana-logo.png */; };
+		492674732A9FC364009E0566 /* apenft-nft-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674162A9FC363009E0566 /* apenft-nft-logo.png */; };
+		492674742A9FC364009E0566 /* filecoin-fil-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674172A9FC363009E0566 /* filecoin-fil-logo.png */; };
+		492674752A9FC364009E0566 /* back_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674182A9FC363009E0566 /* back_log.png */; };
+		492674762A9FC364009E0566 /* maker-mkr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674192A9FC363009E0566 /* maker-mkr-logo.png */; };
+		492674772A9FC364009E0566 /* curve-dao-token-crv-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741A2A9FC363009E0566 /* curve-dao-token-crv-logo.png */; };
+		492674782A9FC364009E0566 /* monero-xmr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741B2A9FC363009E0566 /* monero-xmr-logo.png */; };
+		492674792A9FC364009E0566 /* cosmos-atom-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741C2A9FC363009E0566 /* cosmos-atom-logo.png */; };
+		4926747A2A9FC364009E0566 /* stacks-stx-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741D2A9FC363009E0566 /* stacks-stx-logo.png */; };
+		4926747B2A9FC364009E0566 /* tether-usdt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741E2A9FC363009E0566 /* tether-usdt-logo.png */; };
+		4926747C2A9FC364009E0566 /* immutable-x-imx-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741F2A9FC363009E0566 /* immutable-x-imx-logo.png */; };
+		4926747D2A9FC364009E0566 /* theta-network-theta-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674202A9FC363009E0566 /* theta-network-theta-logo.png */; };
+		4926747E2A9FC364009E0566 /* frax-share-fxs-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674212A9FC363009E0566 /* frax-share-fxs-logo.png */; };
+		4926747F2A9FC364009E0566 /* paxos-standard-usdp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674222A9FC363009E0566 /* paxos-standard-usdp-logo.png */; };
+		492674802A9FC364009E0566 /* kava-kava-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674232A9FC363009E0566 /* kava-kava-logo.png */; };
+		492674812A9FC364009E0566 /* the-graph-grt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674242A9FC363009E0566 /* the-graph-grt-logo.png */; };
+		492674822A9FC364009E0566 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 492674252A9FC363009E0566 /* background.jpg */; };
+		492674832A9FC364009E0566 /* nexo-nexo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674262A9FC363009E0566 /* nexo-nexo-logo.png */; };
+		492674842A9FC364009E0566 /* vechain-vet-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674272A9FC363009E0566 /* vechain-vet-logo.png */; };
+		492674852A9FC364009E0566 /* polygon-matic-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674282A9FC363009E0566 /* polygon-matic-logo.png */; };
+		492674862A9FC364009E0566 /* zcash-zec-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674292A9FC363009E0566 /* zcash-zec-logo.png */; };
+		492674872A9FC364009E0566 /* solana-sol-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926742A2A9FC363009E0566 /* solana-sol-logo.png */; };
+		492674882A9FC364009E0566 /* algorand-algo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926742B2A9FC363009E0566 /* algorand-algo-logo.png */; };
+		492674892A9FC364009E0566 /* cardano-ada-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926742C2A9FC363009E0566 /* cardano-ada-logo.png */; };
+		4926748A2A9FC364009E0566 /* neo-neo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926742D2A9FC363009E0566 /* neo-neo-logo.png */; };
+		4926748B2A9FC364009E0566 /* flare-flr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926742E2A9FC363009E0566 /* flare-flr-logo.png */; };
+		4926748C2A9FC364009E0566 /* 1inch-1inch-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926742F2A9FC363009E0566 /* 1inch-1inch-logo.png */; };
+		4926748D2A9FC364009E0566 /* uniswap-uni-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674302A9FC363009E0566 /* uniswap-uni-logo.png */; };
+		4926748E2A9FC364009E0566 /* internet-computer-icp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674312A9FC363009E0566 /* internet-computer-icp-logo.png */; };
+		4926748F2A9FC364009E0566 /* klaytn-klay-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674322A9FC363009E0566 /* klaytn-klay-logo.png */; };
+		492674902A9FC364009E0566 /* mantle-mnt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674332A9FC363009E0566 /* mantle-mnt-logo.png */; };
+		492674912A9FC364009E0566 /* quant-qnt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674342A9FC363009E0566 /* quant-qnt-logo.png */; };
+		492674922A9FC364009E0566 /* okb-okb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674352A9FC363009E0566 /* okb-okb-logo.png */; };
+		492674932A9FC364009E0566 /* polkadot-new-dot-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674362A9FC363009E0566 /* polkadot-new-dot-logo.png */; };
+		492674942A9FC364009E0566 /* flow-flow-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674372A9FC363009E0566 /* flow-flow-logo.png */; };
+		492674952A9FC364009E0566 /* ethereum-eth-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674382A9FC363009E0566 /* ethereum-eth-logo.png */; };
+		492674962A9FC364009E0566 /* gala-gala-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674392A9FC363009E0566 /* gala-gala-logo.png */; };
+		492674972A9FC364009E0566 /* huobi-token-ht-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926743A2A9FC363009E0566 /* huobi-token-ht-logo.png */; };
+		492674982A9FC364009E0566 /* aptos-apt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926743B2A9FC363009E0566 /* aptos-apt-logo.png */; };
+		492674992A9FC364009E0566 /* lido-dao-ldo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926743C2A9FC363009E0566 /* lido-dao-ldo-logo.png */; };
+		4926749A2A9FC364009E0566 /* arbitrum-arb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926743D2A9FC363009E0566 /* arbitrum-arb-logo.png */; };
+		4926749B2A9FC364009E0566 /* near-protocol-near-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926743E2A9FC363009E0566 /* near-protocol-near-logo.png */; };
+		4926749C2A9FC364009E0566 /* pax-gold-paxg-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926743F2A9FC363009E0566 /* pax-gold-paxg-logo.png */; };
+		4926749D2A9FC364009E0566 /* enjin-coin-enj-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674402A9FC363009E0566 /* enjin-coin-enj-logo.png */; };
+		4926749E2A9FC364009E0566 /* match_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674412A9FC363009E0566 /* match_log.png */; };
+		4926749F2A9FC364009E0566 /* question-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674422A9FC363009E0566 /* question-mark.png */; };
+		492674A02A9FC364009E0566 /* bitcoin-btc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674432A9FC363009E0566 /* bitcoin-btc-logo.png */; };
+		492674A12A9FC364009E0566 /* thorchain-rune-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674442A9FC363009E0566 /* thorchain-rune-logo.png */; };
+		492674A22A9FC364009E0566 /* casper-cspr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674452A9FC363009E0566 /* casper-cspr-logo.png */; };
+		492674A32A9FC364009E0566 /* wootrade-woo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674462A9FC363009E0566 /* wootrade-woo-logo.png */; };
+		492674A42A9FC364009E0566 /* apecoin-ape-ape-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674472A9FC363009E0566 /* apecoin-ape-ape-logo.png */; };
+		492674A52A9FC364009E0566 /* xrp-xrp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674482A9FC363009E0566 /* xrp-xrp-logo.png */; };
+		492674A62A9FC364009E0566 /* gnosis-gno-gno-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674492A9FC363009E0566 /* gnosis-gno-gno-logo.png */; };
+		492674A72A9FC364009E0566 /* bnb-bnb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926744A2A9FC363009E0566 /* bnb-bnb-logo.png */; };
+		492674A82A9FC364009E0566 /* sui-sui-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926744B2A9FC363009E0566 /* sui-sui-logo.png */; };
+		492674A92A9FC364009E0566 /* wrapped-bitcoin-wbtc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926744C2A9FC363009E0566 /* wrapped-bitcoin-wbtc-logo.png */; };
+		492674AA2A9FC364009E0566 /* hedera-hbar-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926744D2A9FC363009E0566 /* hedera-hbar-logo.png */; };
+		492674AB2A9FC364009E0566 /* cronos-cro-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926744E2A9FC363009E0566 /* cronos-cro-logo.png */; };
+		492674AC2A9FC364009E0566 /* arweave-ar-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926744F2A9FC363009E0566 /* arweave-ar-logo.png */; };
+		492674AD2A9FC364009E0566 /* axie-infinity-axs-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674502A9FC363009E0566 /* axie-infinity-axs-logo.png */; };
+		492674AE2A9FC364009E0566 /* multi-collateral-dai-dai-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674512A9FC363009E0566 /* multi-collateral-dai-dai-logo.png */; };
+		492674AF2A9FC364009E0566 /* shiba-inu-shib-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674522A9FC363009E0566 /* shiba-inu-shib-logo.png */; };
+		492674B02A9FC364009E0566 /* synthetix-snx-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674532A9FC363009E0566 /* synthetix-snx-logo.png */; };
+		492674B12A9FC364009E0566 /* stellar-xlm-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674542A9FC363009E0566 /* stellar-xlm-logo.png */; };
+		492674B22A9FC364009E0566 /* tezos-xtz-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674552A9FC363009E0566 /* tezos-xtz-logo.png */; };
+		492674B32A9FC364009E0566 /* toncoin-ton-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674562A9FC363009E0566 /* toncoin-ton-logo.png */; };
+		492674B42A9FC364009E0566 /* basic-attention-token-bat-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674572A9FC363009E0566 /* basic-attention-token-bat-logo.png */; };
+		492674B52A9FC364009E0566 /* tron-trx-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674582A9FC363009E0566 /* tron-trx-logo.png */; };
+		492674B62A9FC364009E0566 /* dydx-dydx-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674592A9FC363009E0566 /* dydx-dydx-logo.png */; };
+		492674B72A9FC364009E0566 /* injective-inj-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926745A2A9FC363009E0566 /* injective-inj-logo.png */; };
+		492674B82A9FC364009E0566 /* fantom-ftm-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926745B2A9FC363009E0566 /* fantom-ftm-logo.png */; };
+		492674B92A9FC364009E0566 /* eos-eos-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926745C2A9FC363009E0566 /* eos-eos-logo.png */; };
+		492674BA2A9FC364009E0566 /* aave-aave-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926745D2A9FC363009E0566 /* aave-aave-logo.png */; };
+		492674BB2A9FC364009E0566 /* unus-sed-leo-leo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926745E2A9FC364009E0566 /* unus-sed-leo-leo-logo.png */; };
+		492674BC2A9FC364009E0566 /* usdd-usdd-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926745F2A9FC364009E0566 /* usdd-usdd-logo.png */; };
+		492674BD2A9FC364009E0566 /* bitcoin-cash-bch-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674602A9FC364009E0566 /* bitcoin-cash-bch-logo.png */; };
+		492674BE2A9FC364009E0566 /* pancakeswap-cake-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674612A9FC364009E0566 /* pancakeswap-cake-logo.png */; };
+		492674BF2A9FC364009E0566 /* multiversx-egld-egld-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674622A9FC364009E0566 /* multiversx-egld-egld-logo.png */; };
+		492674C02A9FC364009E0566 /* dash-dash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674632A9FC364009E0566 /* dash-dash-logo.png */; };
+		492674C12A9FC364009E0566 /* mina-mina-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674642A9FC364009E0566 /* mina-mina-logo.png */; };
+		492674C22A9FC364009E0566 /* kucoin-token-kcs-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674652A9FC364009E0566 /* kucoin-token-kcs-logo.png */; };
 		49507D412A9CC992003F3A93 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507D402A9CC992003F3A93 /* SettingViewController.swift */; };
-		49507DBF2A9D24F3003F3A93 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49507DBE2A9D24F3003F3A93 /* background.jpg */; };
-		49507DC12A9D2D04003F3A93 /* question-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49507DC02A9D2D04003F3A93 /* question-mark.png */; };
-		49507DC32A9D354F003F3A93 /* FlipAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507DC22A9D354F003F3A93 /* FlipAnimation.swift */; };
 		495899272A96965E004D6E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495899262A96965E004D6E64 /* AppDelegate.swift */; };
 		495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495899282A96965E004D6E64 /* SceneDelegate.swift */; };
 		4958992B2A96965E004D6E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958992A2A96965E004D6E64 /* ViewController.swift */; };
 		4958992E2A96965E004D6E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4958992C2A96965E004D6E64 /* Main.storyboard */; };
 		495899302A96965E004D6E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4958992F2A96965E004D6E64 /* Assets.xcassets */; };
 		495899332A96965E004D6E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495899312A96965E004D6E64 /* LaunchScreen.storyboard */; };
-		49615A3D2A9DE3F10032CBBF /* match_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 49615A3C2A9DE3F10032CBBF /* match_log.png */; };
 		496E27C52A9719530090CA4A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C42A9719530090CA4A /* Card.swift */; };
 		496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C82A972CFB0090CA4A /* CardCell.swift */; };
-		498B97572A9B728100C15908 /* mantle-mnt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B972F2A9B728000C15908 /* mantle-mnt-logo.png */; };
-		498B97582A9B728100C15908 /* maker-mkr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97302A9B728000C15908 /* maker-mkr-logo.png */; };
-		498B97592A9B728100C15908 /* bitcoin-cash-bch-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97312A9B728000C15908 /* bitcoin-cash-bch-logo.png */; };
-		498B975A2A9B728100C15908 /* near-protocol-near-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97322A9B728000C15908 /* near-protocol-near-logo.png */; };
-		498B975B2A9B728100C15908 /* vechain-vet-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97332A9B728000C15908 /* vechain-vet-logo.png */; };
-		498B975C2A9B728100C15908 /* solana-sol-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97342A9B728000C15908 /* solana-sol-logo.png */; };
-		498B975D2A9B728100C15908 /* tether-usdt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97352A9B728000C15908 /* tether-usdt-logo.png */; };
-		498B975E2A9B728100C15908 /* bitcoin-btc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97362A9B728000C15908 /* bitcoin-btc-logo.png */; };
-		498B975F2A9B728100C15908 /* quant-qnt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97372A9B728000C15908 /* quant-qnt-logo.png */; };
-		498B97602A9B728100C15908 /* wrapped-bitcoin-wbtc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97382A9B728000C15908 /* wrapped-bitcoin-wbtc-logo.png */; };
-		498B97612A9B728100C15908 /* litecoin-ltc-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97392A9B728000C15908 /* litecoin-ltc-logo.png */; };
-		498B97622A9B728100C15908 /* arbitrum-arb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973A2A9B728000C15908 /* arbitrum-arb-logo.png */; };
-		498B97632A9B728100C15908 /* uniswap-uni-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973B2A9B728000C15908 /* uniswap-uni-logo.png */; };
-		498B97642A9B728100C15908 /* aptos-apt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973C2A9B728000C15908 /* aptos-apt-logo.png */; };
-		498B97652A9B728100C15908 /* unus-sed-leo-leo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973D2A9B728000C15908 /* unus-sed-leo-leo-logo.png */; };
-		498B97672A9B728100C15908 /* okb-okb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B973F2A9B728000C15908 /* okb-okb-logo.png */; };
-		498B97682A9B728100C15908 /* polygon-matic-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97402A9B728000C15908 /* polygon-matic-logo.png */; };
-		498B97692A9B728100C15908 /* cosmos-atom-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97412A9B728000C15908 /* cosmos-atom-logo.png */; };
-		498B976A2A9B728100C15908 /* polkadot-new-dot-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97422A9B728000C15908 /* polkadot-new-dot-logo.png */; };
-		498B976B2A9B728100C15908 /* dogecoin-doge-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97432A9B728000C15908 /* dogecoin-doge-logo.png */; };
-		498B976C2A9B728100C15908 /* chainlink-link-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97442A9B728000C15908 /* chainlink-link-logo.png */; };
-		498B976D2A9B728100C15908 /* multi-collateral-dai-dai-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97452A9B728000C15908 /* multi-collateral-dai-dai-logo.png */; };
-		498B976F2A9B728100C15908 /* ethereum-eth-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97472A9B728100C15908 /* ethereum-eth-logo.png */; };
-		498B97702A9B728100C15908 /* shiba-inu-shib-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97482A9B728100C15908 /* shiba-inu-shib-logo.png */; };
-		498B97712A9B728100C15908 /* avalanche-avax-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97492A9B728100C15908 /* avalanche-avax-logo.png */; };
-		498B97722A9B728100C15908 /* optimism-ethereum-op-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974A2A9B728100C15908 /* optimism-ethereum-op-logo.png */; };
-		498B97732A9B728100C15908 /* xrp-xrp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974B2A9B728100C15908 /* xrp-xrp-logo.png */; };
-		498B97742A9B728100C15908 /* toncoin-ton-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974C2A9B728100C15908 /* toncoin-ton-logo.png */; };
-		498B97752A9B728100C15908 /* cronos-cro-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974D2A9B728100C15908 /* cronos-cro-logo.png */; };
-		498B97762A9B728100C15908 /* hedera-hbar-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974E2A9B728100C15908 /* hedera-hbar-logo.png */; };
-		498B97772A9B728100C15908 /* lido-dao-ldo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B974F2A9B728100C15908 /* lido-dao-ldo-logo.png */; };
-		498B97782A9B728100C15908 /* internet-computer-icp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97502A9B728100C15908 /* internet-computer-icp-logo.png */; };
-		498B97792A9B728100C15908 /* monero-xmr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97512A9B728100C15908 /* monero-xmr-logo.png */; };
-		498B977A2A9B728100C15908 /* bnb-bnb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97522A9B728100C15908 /* bnb-bnb-logo.png */; };
-		498B977B2A9B728100C15908 /* tron-trx-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97532A9B728100C15908 /* tron-trx-logo.png */; };
-		498B977C2A9B728100C15908 /* filecoin-fil-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97542A9B728100C15908 /* filecoin-fil-logo.png */; };
-		498B977D2A9B728100C15908 /* stellar-xlm-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97552A9B728100C15908 /* stellar-xlm-logo.png */; };
-		498B977E2A9B728100C15908 /* cardano-ada-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97562A9B728100C15908 /* cardano-ada-logo.png */; };
-		498B97822A9B732700C15908 /* back_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 498B97812A9B732700C15908 /* back_log.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492674092A9FC363009E0566 /* chainlink-link-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chainlink-link-logo.png"; sourceTree = "<group>"; };
+		4926740A2A9FC363009E0566 /* iota-miota-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iota-miota-logo.png"; sourceTree = "<group>"; };
+		4926740B2A9FC363009E0566 /* the-sandbox-sand-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-sandbox-sand-logo.png"; sourceTree = "<group>"; };
+		4926740C2A9FC363009E0566 /* zilliqa-zil-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zilliqa-zil-logo.png"; sourceTree = "<group>"; };
+		4926740D2A9FC363009E0566 /* litecoin-ltc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "litecoin-ltc-logo.png"; sourceTree = "<group>"; };
+		4926740E2A9FC363009E0566 /* compound-comp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compound-comp-logo.png"; sourceTree = "<group>"; };
+		4926740F2A9FC363009E0566 /* bone-shibaswap-bone-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bone-shibaswap-bone-logo.png"; sourceTree = "<group>"; };
+		492674102A9FC363009E0566 /* dogecoin-doge-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dogecoin-doge-logo.png"; sourceTree = "<group>"; };
+		492674112A9FC363009E0566 /* avalanche-avax-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avalanche-avax-logo.png"; sourceTree = "<group>"; };
+		492674122A9FC363009E0566 /* ecash-xec-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ecash-xec-logo.png"; sourceTree = "<group>"; };
+		492674132A9FC363009E0566 /* optimism-ethereum-op-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "optimism-ethereum-op-logo.png"; sourceTree = "<group>"; };
+		492674142A9FC363009E0566 /* gemini-dollar-gusd-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gemini-dollar-gusd-logo.png"; sourceTree = "<group>"; };
+		492674152A9FC363009E0566 /* decentraland-mana-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "decentraland-mana-logo.png"; sourceTree = "<group>"; };
+		492674162A9FC363009E0566 /* apenft-nft-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apenft-nft-logo.png"; sourceTree = "<group>"; };
+		492674172A9FC363009E0566 /* filecoin-fil-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filecoin-fil-logo.png"; sourceTree = "<group>"; };
+		492674182A9FC363009E0566 /* back_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_log.png; sourceTree = "<group>"; };
+		492674192A9FC363009E0566 /* maker-mkr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maker-mkr-logo.png"; sourceTree = "<group>"; };
+		4926741A2A9FC363009E0566 /* curve-dao-token-crv-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curve-dao-token-crv-logo.png"; sourceTree = "<group>"; };
+		4926741B2A9FC363009E0566 /* monero-xmr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monero-xmr-logo.png"; sourceTree = "<group>"; };
+		4926741C2A9FC363009E0566 /* cosmos-atom-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosmos-atom-logo.png"; sourceTree = "<group>"; };
+		4926741D2A9FC363009E0566 /* stacks-stx-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stacks-stx-logo.png"; sourceTree = "<group>"; };
+		4926741E2A9FC363009E0566 /* tether-usdt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tether-usdt-logo.png"; sourceTree = "<group>"; };
+		4926741F2A9FC363009E0566 /* immutable-x-imx-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "immutable-x-imx-logo.png"; sourceTree = "<group>"; };
+		492674202A9FC363009E0566 /* theta-network-theta-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "theta-network-theta-logo.png"; sourceTree = "<group>"; };
+		492674212A9FC363009E0566 /* frax-share-fxs-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frax-share-fxs-logo.png"; sourceTree = "<group>"; };
+		492674222A9FC363009E0566 /* paxos-standard-usdp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paxos-standard-usdp-logo.png"; sourceTree = "<group>"; };
+		492674232A9FC363009E0566 /* kava-kava-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kava-kava-logo.png"; sourceTree = "<group>"; };
+		492674242A9FC363009E0566 /* the-graph-grt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-graph-grt-logo.png"; sourceTree = "<group>"; };
+		492674252A9FC363009E0566 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		492674262A9FC363009E0566 /* nexo-nexo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nexo-nexo-logo.png"; sourceTree = "<group>"; };
+		492674272A9FC363009E0566 /* vechain-vet-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vechain-vet-logo.png"; sourceTree = "<group>"; };
+		492674282A9FC363009E0566 /* polygon-matic-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polygon-matic-logo.png"; sourceTree = "<group>"; };
+		492674292A9FC363009E0566 /* zcash-zec-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zcash-zec-logo.png"; sourceTree = "<group>"; };
+		4926742A2A9FC363009E0566 /* solana-sol-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solana-sol-logo.png"; sourceTree = "<group>"; };
+		4926742B2A9FC363009E0566 /* algorand-algo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "algorand-algo-logo.png"; sourceTree = "<group>"; };
+		4926742C2A9FC363009E0566 /* cardano-ada-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardano-ada-logo.png"; sourceTree = "<group>"; };
+		4926742D2A9FC363009E0566 /* neo-neo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "neo-neo-logo.png"; sourceTree = "<group>"; };
+		4926742E2A9FC363009E0566 /* flare-flr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flare-flr-logo.png"; sourceTree = "<group>"; };
+		4926742F2A9FC363009E0566 /* 1inch-1inch-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1inch-1inch-logo.png"; sourceTree = "<group>"; };
+		492674302A9FC363009E0566 /* uniswap-uni-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uniswap-uni-logo.png"; sourceTree = "<group>"; };
+		492674312A9FC363009E0566 /* internet-computer-icp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "internet-computer-icp-logo.png"; sourceTree = "<group>"; };
+		492674322A9FC363009E0566 /* klaytn-klay-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klaytn-klay-logo.png"; sourceTree = "<group>"; };
+		492674332A9FC363009E0566 /* mantle-mnt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mantle-mnt-logo.png"; sourceTree = "<group>"; };
+		492674342A9FC363009E0566 /* quant-qnt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quant-qnt-logo.png"; sourceTree = "<group>"; };
+		492674352A9FC363009E0566 /* okb-okb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okb-okb-logo.png"; sourceTree = "<group>"; };
+		492674362A9FC363009E0566 /* polkadot-new-dot-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polkadot-new-dot-logo.png"; sourceTree = "<group>"; };
+		492674372A9FC363009E0566 /* flow-flow-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flow-flow-logo.png"; sourceTree = "<group>"; };
+		492674382A9FC363009E0566 /* ethereum-eth-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ethereum-eth-logo.png"; sourceTree = "<group>"; };
+		492674392A9FC363009E0566 /* gala-gala-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gala-gala-logo.png"; sourceTree = "<group>"; };
+		4926743A2A9FC363009E0566 /* huobi-token-ht-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "huobi-token-ht-logo.png"; sourceTree = "<group>"; };
+		4926743B2A9FC363009E0566 /* aptos-apt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aptos-apt-logo.png"; sourceTree = "<group>"; };
+		4926743C2A9FC363009E0566 /* lido-dao-ldo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lido-dao-ldo-logo.png"; sourceTree = "<group>"; };
+		4926743D2A9FC363009E0566 /* arbitrum-arb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arbitrum-arb-logo.png"; sourceTree = "<group>"; };
+		4926743E2A9FC363009E0566 /* near-protocol-near-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near-protocol-near-logo.png"; sourceTree = "<group>"; };
+		4926743F2A9FC363009E0566 /* pax-gold-paxg-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pax-gold-paxg-logo.png"; sourceTree = "<group>"; };
+		492674402A9FC363009E0566 /* enjin-coin-enj-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enjin-coin-enj-logo.png"; sourceTree = "<group>"; };
+		492674412A9FC363009E0566 /* match_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = match_log.png; sourceTree = "<group>"; };
+		492674422A9FC363009E0566 /* question-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question-mark.png"; sourceTree = "<group>"; };
+		492674432A9FC363009E0566 /* bitcoin-btc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-btc-logo.png"; sourceTree = "<group>"; };
+		492674442A9FC363009E0566 /* thorchain-rune-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thorchain-rune-logo.png"; sourceTree = "<group>"; };
+		492674452A9FC363009E0566 /* casper-cspr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "casper-cspr-logo.png"; sourceTree = "<group>"; };
+		492674462A9FC363009E0566 /* wootrade-woo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wootrade-woo-logo.png"; sourceTree = "<group>"; };
+		492674472A9FC363009E0566 /* apecoin-ape-ape-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apecoin-ape-ape-logo.png"; sourceTree = "<group>"; };
+		492674482A9FC363009E0566 /* xrp-xrp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xrp-xrp-logo.png"; sourceTree = "<group>"; };
+		492674492A9FC363009E0566 /* gnosis-gno-gno-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gnosis-gno-gno-logo.png"; sourceTree = "<group>"; };
+		4926744A2A9FC363009E0566 /* bnb-bnb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bnb-bnb-logo.png"; sourceTree = "<group>"; };
+		4926744B2A9FC363009E0566 /* sui-sui-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sui-sui-logo.png"; sourceTree = "<group>"; };
+		4926744C2A9FC363009E0566 /* wrapped-bitcoin-wbtc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wrapped-bitcoin-wbtc-logo.png"; sourceTree = "<group>"; };
+		4926744D2A9FC363009E0566 /* hedera-hbar-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hedera-hbar-logo.png"; sourceTree = "<group>"; };
+		4926744E2A9FC363009E0566 /* cronos-cro-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cronos-cro-logo.png"; sourceTree = "<group>"; };
+		4926744F2A9FC363009E0566 /* arweave-ar-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arweave-ar-logo.png"; sourceTree = "<group>"; };
+		492674502A9FC363009E0566 /* axie-infinity-axs-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "axie-infinity-axs-logo.png"; sourceTree = "<group>"; };
+		492674512A9FC363009E0566 /* multi-collateral-dai-dai-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multi-collateral-dai-dai-logo.png"; sourceTree = "<group>"; };
+		492674522A9FC363009E0566 /* shiba-inu-shib-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shiba-inu-shib-logo.png"; sourceTree = "<group>"; };
+		492674532A9FC363009E0566 /* synthetix-snx-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "synthetix-snx-logo.png"; sourceTree = "<group>"; };
+		492674542A9FC363009E0566 /* stellar-xlm-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stellar-xlm-logo.png"; sourceTree = "<group>"; };
+		492674552A9FC363009E0566 /* tezos-xtz-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tezos-xtz-logo.png"; sourceTree = "<group>"; };
+		492674562A9FC363009E0566 /* toncoin-ton-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toncoin-ton-logo.png"; sourceTree = "<group>"; };
+		492674572A9FC363009E0566 /* basic-attention-token-bat-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic-attention-token-bat-logo.png"; sourceTree = "<group>"; };
+		492674582A9FC363009E0566 /* tron-trx-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tron-trx-logo.png"; sourceTree = "<group>"; };
+		492674592A9FC363009E0566 /* dydx-dydx-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dydx-dydx-logo.png"; sourceTree = "<group>"; };
+		4926745A2A9FC363009E0566 /* injective-inj-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "injective-inj-logo.png"; sourceTree = "<group>"; };
+		4926745B2A9FC363009E0566 /* fantom-ftm-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fantom-ftm-logo.png"; sourceTree = "<group>"; };
+		4926745C2A9FC363009E0566 /* eos-eos-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eos-eos-logo.png"; sourceTree = "<group>"; };
+		4926745D2A9FC363009E0566 /* aave-aave-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aave-aave-logo.png"; sourceTree = "<group>"; };
+		4926745E2A9FC364009E0566 /* unus-sed-leo-leo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unus-sed-leo-leo-logo.png"; sourceTree = "<group>"; };
+		4926745F2A9FC364009E0566 /* usdd-usdd-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usdd-usdd-logo.png"; sourceTree = "<group>"; };
+		492674602A9FC364009E0566 /* bitcoin-cash-bch-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-cash-bch-logo.png"; sourceTree = "<group>"; };
+		492674612A9FC364009E0566 /* pancakeswap-cake-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pancakeswap-cake-logo.png"; sourceTree = "<group>"; };
+		492674622A9FC364009E0566 /* multiversx-egld-egld-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multiversx-egld-egld-logo.png"; sourceTree = "<group>"; };
+		492674632A9FC364009E0566 /* dash-dash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dash-dash-logo.png"; sourceTree = "<group>"; };
+		492674642A9FC364009E0566 /* mina-mina-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mina-mina-logo.png"; sourceTree = "<group>"; };
+		492674652A9FC364009E0566 /* kucoin-token-kcs-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kucoin-token-kcs-logo.png"; sourceTree = "<group>"; };
 		49507D402A9CC992003F3A93 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		49507DBE2A9D24F3003F3A93 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		49507DC02A9D2D04003F3A93 /* question-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question-mark.png"; sourceTree = "<group>"; };
-		49507DC22A9D354F003F3A93 /* FlipAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipAnimation.swift; sourceTree = "<group>"; };
 		495899232A96965E004D6E64 /* Milestone28-30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone28-30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495899262A96965E004D6E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495899282A96965E004D6E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,48 +214,8 @@
 		4958992F2A96965E004D6E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495899322A96965E004D6E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495899342A96965E004D6E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49615A3C2A9DE3F10032CBBF /* match_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = match_log.png; sourceTree = "<group>"; };
 		496E27C42A9719530090CA4A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		496E27C82A972CFB0090CA4A /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		498B972F2A9B728000C15908 /* mantle-mnt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mantle-mnt-logo.png"; sourceTree = "<group>"; };
-		498B97302A9B728000C15908 /* maker-mkr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maker-mkr-logo.png"; sourceTree = "<group>"; };
-		498B97312A9B728000C15908 /* bitcoin-cash-bch-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-cash-bch-logo.png"; sourceTree = "<group>"; };
-		498B97322A9B728000C15908 /* near-protocol-near-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near-protocol-near-logo.png"; sourceTree = "<group>"; };
-		498B97332A9B728000C15908 /* vechain-vet-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vechain-vet-logo.png"; sourceTree = "<group>"; };
-		498B97342A9B728000C15908 /* solana-sol-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solana-sol-logo.png"; sourceTree = "<group>"; };
-		498B97352A9B728000C15908 /* tether-usdt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tether-usdt-logo.png"; sourceTree = "<group>"; };
-		498B97362A9B728000C15908 /* bitcoin-btc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-btc-logo.png"; sourceTree = "<group>"; };
-		498B97372A9B728000C15908 /* quant-qnt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quant-qnt-logo.png"; sourceTree = "<group>"; };
-		498B97382A9B728000C15908 /* wrapped-bitcoin-wbtc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wrapped-bitcoin-wbtc-logo.png"; sourceTree = "<group>"; };
-		498B97392A9B728000C15908 /* litecoin-ltc-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "litecoin-ltc-logo.png"; sourceTree = "<group>"; };
-		498B973A2A9B728000C15908 /* arbitrum-arb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arbitrum-arb-logo.png"; sourceTree = "<group>"; };
-		498B973B2A9B728000C15908 /* uniswap-uni-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uniswap-uni-logo.png"; sourceTree = "<group>"; };
-		498B973C2A9B728000C15908 /* aptos-apt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aptos-apt-logo.png"; sourceTree = "<group>"; };
-		498B973D2A9B728000C15908 /* unus-sed-leo-leo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unus-sed-leo-leo-logo.png"; sourceTree = "<group>"; };
-		498B973F2A9B728000C15908 /* okb-okb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okb-okb-logo.png"; sourceTree = "<group>"; };
-		498B97402A9B728000C15908 /* polygon-matic-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polygon-matic-logo.png"; sourceTree = "<group>"; };
-		498B97412A9B728000C15908 /* cosmos-atom-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosmos-atom-logo.png"; sourceTree = "<group>"; };
-		498B97422A9B728000C15908 /* polkadot-new-dot-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polkadot-new-dot-logo.png"; sourceTree = "<group>"; };
-		498B97432A9B728000C15908 /* dogecoin-doge-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dogecoin-doge-logo.png"; sourceTree = "<group>"; };
-		498B97442A9B728000C15908 /* chainlink-link-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chainlink-link-logo.png"; sourceTree = "<group>"; };
-		498B97452A9B728000C15908 /* multi-collateral-dai-dai-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multi-collateral-dai-dai-logo.png"; sourceTree = "<group>"; };
-		498B97472A9B728100C15908 /* ethereum-eth-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ethereum-eth-logo.png"; sourceTree = "<group>"; };
-		498B97482A9B728100C15908 /* shiba-inu-shib-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shiba-inu-shib-logo.png"; sourceTree = "<group>"; };
-		498B97492A9B728100C15908 /* avalanche-avax-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avalanche-avax-logo.png"; sourceTree = "<group>"; };
-		498B974A2A9B728100C15908 /* optimism-ethereum-op-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "optimism-ethereum-op-logo.png"; sourceTree = "<group>"; };
-		498B974B2A9B728100C15908 /* xrp-xrp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xrp-xrp-logo.png"; sourceTree = "<group>"; };
-		498B974C2A9B728100C15908 /* toncoin-ton-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toncoin-ton-logo.png"; sourceTree = "<group>"; };
-		498B974D2A9B728100C15908 /* cronos-cro-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cronos-cro-logo.png"; sourceTree = "<group>"; };
-		498B974E2A9B728100C15908 /* hedera-hbar-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hedera-hbar-logo.png"; sourceTree = "<group>"; };
-		498B974F2A9B728100C15908 /* lido-dao-ldo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lido-dao-ldo-logo.png"; sourceTree = "<group>"; };
-		498B97502A9B728100C15908 /* internet-computer-icp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "internet-computer-icp-logo.png"; sourceTree = "<group>"; };
-		498B97512A9B728100C15908 /* monero-xmr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monero-xmr-logo.png"; sourceTree = "<group>"; };
-		498B97522A9B728100C15908 /* bnb-bnb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bnb-bnb-logo.png"; sourceTree = "<group>"; };
-		498B97532A9B728100C15908 /* tron-trx-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tron-trx-logo.png"; sourceTree = "<group>"; };
-		498B97542A9B728100C15908 /* filecoin-fil-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filecoin-fil-logo.png"; sourceTree = "<group>"; };
-		498B97552A9B728100C15908 /* stellar-xlm-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stellar-xlm-logo.png"; sourceTree = "<group>"; };
-		498B97562A9B728100C15908 /* cardano-ada-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardano-ada-logo.png"; sourceTree = "<group>"; };
-		498B97812A9B732700C15908 /* back_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_log.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +241,6 @@
 		49507D432A9CCA30003F3A93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				49507DC22A9D354F003F3A93 /* FlipAnimation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,48 +290,99 @@
 		498093302A97494400AE8F33 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				498B973C2A9B728000C15908 /* aptos-apt-logo.png */,
-				498B973A2A9B728000C15908 /* arbitrum-arb-logo.png */,
-				498B97492A9B728100C15908 /* avalanche-avax-logo.png */,
-				498B97812A9B732700C15908 /* back_log.png */,
-				49507DBE2A9D24F3003F3A93 /* background.jpg */,
-				498B97362A9B728000C15908 /* bitcoin-btc-logo.png */,
-				498B97312A9B728000C15908 /* bitcoin-cash-bch-logo.png */,
-				498B97522A9B728100C15908 /* bnb-bnb-logo.png */,
-				498B97562A9B728100C15908 /* cardano-ada-logo.png */,
-				498B97442A9B728000C15908 /* chainlink-link-logo.png */,
-				498B97412A9B728000C15908 /* cosmos-atom-logo.png */,
-				498B974D2A9B728100C15908 /* cronos-cro-logo.png */,
-				498B97432A9B728000C15908 /* dogecoin-doge-logo.png */,
-				498B97472A9B728100C15908 /* ethereum-eth-logo.png */,
-				498B97542A9B728100C15908 /* filecoin-fil-logo.png */,
-				498B974E2A9B728100C15908 /* hedera-hbar-logo.png */,
-				498B97502A9B728100C15908 /* internet-computer-icp-logo.png */,
-				498B974F2A9B728100C15908 /* lido-dao-ldo-logo.png */,
-				498B97392A9B728000C15908 /* litecoin-ltc-logo.png */,
-				498B97302A9B728000C15908 /* maker-mkr-logo.png */,
-				498B972F2A9B728000C15908 /* mantle-mnt-logo.png */,
-				49615A3C2A9DE3F10032CBBF /* match_log.png */,
-				498B97512A9B728100C15908 /* monero-xmr-logo.png */,
-				498B97452A9B728000C15908 /* multi-collateral-dai-dai-logo.png */,
-				498B97322A9B728000C15908 /* near-protocol-near-logo.png */,
-				498B973F2A9B728000C15908 /* okb-okb-logo.png */,
-				498B974A2A9B728100C15908 /* optimism-ethereum-op-logo.png */,
-				498B97422A9B728000C15908 /* polkadot-new-dot-logo.png */,
-				498B97402A9B728000C15908 /* polygon-matic-logo.png */,
-				498B97372A9B728000C15908 /* quant-qnt-logo.png */,
-				49507DC02A9D2D04003F3A93 /* question-mark.png */,
-				498B97482A9B728100C15908 /* shiba-inu-shib-logo.png */,
-				498B97342A9B728000C15908 /* solana-sol-logo.png */,
-				498B97552A9B728100C15908 /* stellar-xlm-logo.png */,
-				498B97352A9B728000C15908 /* tether-usdt-logo.png */,
-				498B974C2A9B728100C15908 /* toncoin-ton-logo.png */,
-				498B97532A9B728100C15908 /* tron-trx-logo.png */,
-				498B973B2A9B728000C15908 /* uniswap-uni-logo.png */,
-				498B973D2A9B728000C15908 /* unus-sed-leo-leo-logo.png */,
-				498B97332A9B728000C15908 /* vechain-vet-logo.png */,
-				498B97382A9B728000C15908 /* wrapped-bitcoin-wbtc-logo.png */,
-				498B974B2A9B728100C15908 /* xrp-xrp-logo.png */,
+				4926742F2A9FC363009E0566 /* 1inch-1inch-logo.png */,
+				4926745D2A9FC363009E0566 /* aave-aave-logo.png */,
+				4926742B2A9FC363009E0566 /* algorand-algo-logo.png */,
+				492674472A9FC363009E0566 /* apecoin-ape-ape-logo.png */,
+				492674162A9FC363009E0566 /* apenft-nft-logo.png */,
+				4926743B2A9FC363009E0566 /* aptos-apt-logo.png */,
+				4926743D2A9FC363009E0566 /* arbitrum-arb-logo.png */,
+				4926744F2A9FC363009E0566 /* arweave-ar-logo.png */,
+				492674112A9FC363009E0566 /* avalanche-avax-logo.png */,
+				492674502A9FC363009E0566 /* axie-infinity-axs-logo.png */,
+				492674182A9FC363009E0566 /* back_log.png */,
+				492674252A9FC363009E0566 /* background.jpg */,
+				492674572A9FC363009E0566 /* basic-attention-token-bat-logo.png */,
+				492674432A9FC363009E0566 /* bitcoin-btc-logo.png */,
+				492674602A9FC364009E0566 /* bitcoin-cash-bch-logo.png */,
+				4926744A2A9FC363009E0566 /* bnb-bnb-logo.png */,
+				4926740F2A9FC363009E0566 /* bone-shibaswap-bone-logo.png */,
+				4926742C2A9FC363009E0566 /* cardano-ada-logo.png */,
+				492674452A9FC363009E0566 /* casper-cspr-logo.png */,
+				492674092A9FC363009E0566 /* chainlink-link-logo.png */,
+				4926740E2A9FC363009E0566 /* compound-comp-logo.png */,
+				4926741C2A9FC363009E0566 /* cosmos-atom-logo.png */,
+				4926744E2A9FC363009E0566 /* cronos-cro-logo.png */,
+				4926741A2A9FC363009E0566 /* curve-dao-token-crv-logo.png */,
+				492674632A9FC364009E0566 /* dash-dash-logo.png */,
+				492674152A9FC363009E0566 /* decentraland-mana-logo.png */,
+				492674102A9FC363009E0566 /* dogecoin-doge-logo.png */,
+				492674592A9FC363009E0566 /* dydx-dydx-logo.png */,
+				492674122A9FC363009E0566 /* ecash-xec-logo.png */,
+				492674402A9FC363009E0566 /* enjin-coin-enj-logo.png */,
+				4926745C2A9FC363009E0566 /* eos-eos-logo.png */,
+				492674382A9FC363009E0566 /* ethereum-eth-logo.png */,
+				4926745B2A9FC363009E0566 /* fantom-ftm-logo.png */,
+				492674172A9FC363009E0566 /* filecoin-fil-logo.png */,
+				4926742E2A9FC363009E0566 /* flare-flr-logo.png */,
+				492674372A9FC363009E0566 /* flow-flow-logo.png */,
+				492674212A9FC363009E0566 /* frax-share-fxs-logo.png */,
+				492674392A9FC363009E0566 /* gala-gala-logo.png */,
+				492674142A9FC363009E0566 /* gemini-dollar-gusd-logo.png */,
+				492674492A9FC363009E0566 /* gnosis-gno-gno-logo.png */,
+				4926744D2A9FC363009E0566 /* hedera-hbar-logo.png */,
+				4926743A2A9FC363009E0566 /* huobi-token-ht-logo.png */,
+				4926741F2A9FC363009E0566 /* immutable-x-imx-logo.png */,
+				4926745A2A9FC363009E0566 /* injective-inj-logo.png */,
+				492674312A9FC363009E0566 /* internet-computer-icp-logo.png */,
+				4926740A2A9FC363009E0566 /* iota-miota-logo.png */,
+				492674232A9FC363009E0566 /* kava-kava-logo.png */,
+				492674322A9FC363009E0566 /* klaytn-klay-logo.png */,
+				492674652A9FC364009E0566 /* kucoin-token-kcs-logo.png */,
+				4926743C2A9FC363009E0566 /* lido-dao-ldo-logo.png */,
+				4926740D2A9FC363009E0566 /* litecoin-ltc-logo.png */,
+				492674192A9FC363009E0566 /* maker-mkr-logo.png */,
+				492674332A9FC363009E0566 /* mantle-mnt-logo.png */,
+				492674412A9FC363009E0566 /* match_log.png */,
+				492674642A9FC364009E0566 /* mina-mina-logo.png */,
+				4926741B2A9FC363009E0566 /* monero-xmr-logo.png */,
+				492674512A9FC363009E0566 /* multi-collateral-dai-dai-logo.png */,
+				492674622A9FC364009E0566 /* multiversx-egld-egld-logo.png */,
+				4926743E2A9FC363009E0566 /* near-protocol-near-logo.png */,
+				4926742D2A9FC363009E0566 /* neo-neo-logo.png */,
+				492674262A9FC363009E0566 /* nexo-nexo-logo.png */,
+				492674352A9FC363009E0566 /* okb-okb-logo.png */,
+				492674132A9FC363009E0566 /* optimism-ethereum-op-logo.png */,
+				492674612A9FC364009E0566 /* pancakeswap-cake-logo.png */,
+				4926743F2A9FC363009E0566 /* pax-gold-paxg-logo.png */,
+				492674222A9FC363009E0566 /* paxos-standard-usdp-logo.png */,
+				492674362A9FC363009E0566 /* polkadot-new-dot-logo.png */,
+				492674282A9FC363009E0566 /* polygon-matic-logo.png */,
+				492674342A9FC363009E0566 /* quant-qnt-logo.png */,
+				492674422A9FC363009E0566 /* question-mark.png */,
+				492674522A9FC363009E0566 /* shiba-inu-shib-logo.png */,
+				4926742A2A9FC363009E0566 /* solana-sol-logo.png */,
+				4926741D2A9FC363009E0566 /* stacks-stx-logo.png */,
+				492674542A9FC363009E0566 /* stellar-xlm-logo.png */,
+				4926744B2A9FC363009E0566 /* sui-sui-logo.png */,
+				492674532A9FC363009E0566 /* synthetix-snx-logo.png */,
+				4926741E2A9FC363009E0566 /* tether-usdt-logo.png */,
+				492674552A9FC363009E0566 /* tezos-xtz-logo.png */,
+				492674242A9FC363009E0566 /* the-graph-grt-logo.png */,
+				4926740B2A9FC363009E0566 /* the-sandbox-sand-logo.png */,
+				492674202A9FC363009E0566 /* theta-network-theta-logo.png */,
+				492674442A9FC363009E0566 /* thorchain-rune-logo.png */,
+				492674562A9FC363009E0566 /* toncoin-ton-logo.png */,
+				492674582A9FC363009E0566 /* tron-trx-logo.png */,
+				492674302A9FC363009E0566 /* uniswap-uni-logo.png */,
+				4926745E2A9FC364009E0566 /* unus-sed-leo-leo-logo.png */,
+				4926745F2A9FC364009E0566 /* usdd-usdd-logo.png */,
+				492674272A9FC363009E0566 /* vechain-vet-logo.png */,
+				492674462A9FC363009E0566 /* wootrade-woo-logo.png */,
+				4926744C2A9FC363009E0566 /* wrapped-bitcoin-wbtc-logo.png */,
+				492674482A9FC363009E0566 /* xrp-xrp-logo.png */,
+				492674292A9FC363009E0566 /* zcash-zec-logo.png */,
+				4926740C2A9FC363009E0566 /* zilliqa-zil-logo.png */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -272,7 +422,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4958991E2A96965E004D6E64 /* Build configuration list for PBXProject "Milestone28-30" */;
+			buildConfigurationList = 4958991E2A96965E004D6E64 /* Build configuration list for PBXProject "Match_cards" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,51 +445,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				498B97742A9B728100C15908 /* toncoin-ton-logo.png in Resources */,
-				498B97652A9B728100C15908 /* unus-sed-leo-leo-logo.png in Resources */,
-				49615A3D2A9DE3F10032CBBF /* match_log.png in Resources */,
-				498B975D2A9B728100C15908 /* tether-usdt-logo.png in Resources */,
-				498B97732A9B728100C15908 /* xrp-xrp-logo.png in Resources */,
-				498B97782A9B728100C15908 /* internet-computer-icp-logo.png in Resources */,
-				49507DC12A9D2D04003F3A93 /* question-mark.png in Resources */,
-				498B97672A9B728100C15908 /* okb-okb-logo.png in Resources */,
-				498B97752A9B728100C15908 /* cronos-cro-logo.png in Resources */,
-				498B97822A9B732700C15908 /* back_log.png in Resources */,
-				498B977E2A9B728100C15908 /* cardano-ada-logo.png in Resources */,
-				49507DBF2A9D24F3003F3A93 /* background.jpg in Resources */,
-				498B97682A9B728100C15908 /* polygon-matic-logo.png in Resources */,
-				498B977D2A9B728100C15908 /* stellar-xlm-logo.png in Resources */,
-				498B977B2A9B728100C15908 /* tron-trx-logo.png in Resources */,
-				498B97592A9B728100C15908 /* bitcoin-cash-bch-logo.png in Resources */,
-				498B97692A9B728100C15908 /* cosmos-atom-logo.png in Resources */,
+				492674772A9FC364009E0566 /* curve-dao-token-crv-logo.png in Resources */,
+				492674AE2A9FC364009E0566 /* multi-collateral-dai-dai-logo.png in Resources */,
+				492674902A9FC364009E0566 /* mantle-mnt-logo.png in Resources */,
+				492674B12A9FC364009E0566 /* stellar-xlm-logo.png in Resources */,
+				492674BD2A9FC364009E0566 /* bitcoin-cash-bch-logo.png in Resources */,
+				4926749E2A9FC364009E0566 /* match_log.png in Resources */,
+				492674962A9FC364009E0566 /* gala-gala-logo.png in Resources */,
+				4926747A2A9FC364009E0566 /* stacks-stx-logo.png in Resources */,
+				492674C02A9FC364009E0566 /* dash-dash-logo.png in Resources */,
+				4926746F2A9FC364009E0566 /* ecash-xec-logo.png in Resources */,
+				492674AF2A9FC364009E0566 /* shiba-inu-shib-logo.png in Resources */,
+				492674862A9FC364009E0566 /* zcash-zec-logo.png in Resources */,
+				4926749D2A9FC364009E0566 /* enjin-coin-enj-logo.png in Resources */,
+				492674C12A9FC364009E0566 /* mina-mina-logo.png in Resources */,
+				492674B22A9FC364009E0566 /* tezos-xtz-logo.png in Resources */,
+				492674A22A9FC364009E0566 /* casper-cspr-logo.png in Resources */,
+				492674B82A9FC364009E0566 /* fantom-ftm-logo.png in Resources */,
+				492674892A9FC364009E0566 /* cardano-ada-logo.png in Resources */,
+				492674852A9FC364009E0566 /* polygon-matic-logo.png in Resources */,
+				4926749F2A9FC364009E0566 /* question-mark.png in Resources */,
+				492674912A9FC364009E0566 /* quant-qnt-logo.png in Resources */,
+				4926746E2A9FC364009E0566 /* avalanche-avax-logo.png in Resources */,
+				492674872A9FC364009E0566 /* solana-sol-logo.png in Resources */,
+				492674882A9FC364009E0566 /* algorand-algo-logo.png in Resources */,
+				492674752A9FC364009E0566 /* back_log.png in Resources */,
+				492674662A9FC364009E0566 /* chainlink-link-logo.png in Resources */,
+				492674AD2A9FC364009E0566 /* axie-infinity-axs-logo.png in Resources */,
+				492674A42A9FC364009E0566 /* apecoin-ape-ape-logo.png in Resources */,
+				4926746B2A9FC364009E0566 /* compound-comp-logo.png in Resources */,
+				492674B02A9FC364009E0566 /* synthetix-snx-logo.png in Resources */,
+				492674692A9FC364009E0566 /* zilliqa-zil-logo.png in Resources */,
+				4926749B2A9FC364009E0566 /* near-protocol-near-logo.png in Resources */,
+				492674762A9FC364009E0566 /* maker-mkr-logo.png in Resources */,
+				492674BB2A9FC364009E0566 /* unus-sed-leo-leo-logo.png in Resources */,
+				492674932A9FC364009E0566 /* polkadot-new-dot-logo.png in Resources */,
+				492674842A9FC364009E0566 /* vechain-vet-logo.png in Resources */,
+				492674992A9FC364009E0566 /* lido-dao-ldo-logo.png in Resources */,
+				492674942A9FC364009E0566 /* flow-flow-logo.png in Resources */,
 				495899332A96965E004D6E64 /* LaunchScreen.storyboard in Resources */,
-				498B97582A9B728100C15908 /* maker-mkr-logo.png in Resources */,
-				498B977C2A9B728100C15908 /* filecoin-fil-logo.png in Resources */,
-				498B97572A9B728100C15908 /* mantle-mnt-logo.png in Resources */,
-				498B97632A9B728100C15908 /* uniswap-uni-logo.png in Resources */,
-				498B97702A9B728100C15908 /* shiba-inu-shib-logo.png in Resources */,
-				498B975C2A9B728100C15908 /* solana-sol-logo.png in Resources */,
-				498B97772A9B728100C15908 /* lido-dao-ldo-logo.png in Resources */,
-				498B97622A9B728100C15908 /* arbitrum-arb-logo.png in Resources */,
+				4926747B2A9FC364009E0566 /* tether-usdt-logo.png in Resources */,
+				492674A52A9FC364009E0566 /* xrp-xrp-logo.png in Resources */,
 				495899302A96965E004D6E64 /* Assets.xcassets in Resources */,
-				498B975A2A9B728100C15908 /* near-protocol-near-logo.png in Resources */,
-				498B97722A9B728100C15908 /* optimism-ethereum-op-logo.png in Resources */,
-				498B975F2A9B728100C15908 /* quant-qnt-logo.png in Resources */,
-				498B975E2A9B728100C15908 /* bitcoin-btc-logo.png in Resources */,
-				498B976C2A9B728100C15908 /* chainlink-link-logo.png in Resources */,
-				498B976A2A9B728100C15908 /* polkadot-new-dot-logo.png in Resources */,
-				498B976D2A9B728100C15908 /* multi-collateral-dai-dai-logo.png in Resources */,
+				492674AB2A9FC364009E0566 /* cronos-cro-logo.png in Resources */,
+				492674BC2A9FC364009E0566 /* usdd-usdd-logo.png in Resources */,
+				492674832A9FC364009E0566 /* nexo-nexo-logo.png in Resources */,
+				492674782A9FC364009E0566 /* monero-xmr-logo.png in Resources */,
+				492674922A9FC364009E0566 /* okb-okb-logo.png in Resources */,
+				492674C22A9FC364009E0566 /* kucoin-token-kcs-logo.png in Resources */,
+				492674A82A9FC364009E0566 /* sui-sui-logo.png in Resources */,
+				4926747C2A9FC364009E0566 /* immutable-x-imx-logo.png in Resources */,
+				4926747F2A9FC364009E0566 /* paxos-standard-usdp-logo.png in Resources */,
+				4926746D2A9FC364009E0566 /* dogecoin-doge-logo.png in Resources */,
+				492674B92A9FC364009E0566 /* eos-eos-logo.png in Resources */,
+				492674A62A9FC364009E0566 /* gnosis-gno-gno-logo.png in Resources */,
+				4926748B2A9FC364009E0566 /* flare-flr-logo.png in Resources */,
+				492674A92A9FC364009E0566 /* wrapped-bitcoin-wbtc-logo.png in Resources */,
+				4926748D2A9FC364009E0566 /* uniswap-uni-logo.png in Resources */,
+				4926748F2A9FC364009E0566 /* klaytn-klay-logo.png in Resources */,
+				4926749C2A9FC364009E0566 /* pax-gold-paxg-logo.png in Resources */,
+				492674972A9FC364009E0566 /* huobi-token-ht-logo.png in Resources */,
+				4926748E2A9FC364009E0566 /* internet-computer-icp-logo.png in Resources */,
+				492674BF2A9FC364009E0566 /* multiversx-egld-egld-logo.png in Resources */,
+				492674A32A9FC364009E0566 /* wootrade-woo-logo.png in Resources */,
+				492674B52A9FC364009E0566 /* tron-trx-logo.png in Resources */,
+				4926748C2A9FC364009E0566 /* 1inch-1inch-logo.png in Resources */,
+				492674AC2A9FC364009E0566 /* arweave-ar-logo.png in Resources */,
+				492674B42A9FC364009E0566 /* basic-attention-token-bat-logo.png in Resources */,
+				492674AA2A9FC364009E0566 /* hedera-hbar-logo.png in Resources */,
+				4926747E2A9FC364009E0566 /* frax-share-fxs-logo.png in Resources */,
+				492674732A9FC364009E0566 /* apenft-nft-logo.png in Resources */,
+				4926747D2A9FC364009E0566 /* theta-network-theta-logo.png in Resources */,
+				4926748A2A9FC364009E0566 /* neo-neo-logo.png in Resources */,
+				492674702A9FC364009E0566 /* optimism-ethereum-op-logo.png in Resources */,
+				492674BE2A9FC364009E0566 /* pancakeswap-cake-logo.png in Resources */,
+				492674BA2A9FC364009E0566 /* aave-aave-logo.png in Resources */,
+				492674A12A9FC364009E0566 /* thorchain-rune-logo.png in Resources */,
+				492674792A9FC364009E0566 /* cosmos-atom-logo.png in Resources */,
 				4958992E2A96965E004D6E64 /* Main.storyboard in Resources */,
-				498B977A2A9B728100C15908 /* bnb-bnb-logo.png in Resources */,
-				498B976B2A9B728100C15908 /* dogecoin-doge-logo.png in Resources */,
-				498B97612A9B728100C15908 /* litecoin-ltc-logo.png in Resources */,
-				498B97792A9B728100C15908 /* monero-xmr-logo.png in Resources */,
-				498B97712A9B728100C15908 /* avalanche-avax-logo.png in Resources */,
-				498B97762A9B728100C15908 /* hedera-hbar-logo.png in Resources */,
-				498B976F2A9B728100C15908 /* ethereum-eth-logo.png in Resources */,
-				498B97642A9B728100C15908 /* aptos-apt-logo.png in Resources */,
-				498B97602A9B728100C15908 /* wrapped-bitcoin-wbtc-logo.png in Resources */,
-				498B975B2A9B728100C15908 /* vechain-vet-logo.png in Resources */,
+				492674722A9FC364009E0566 /* decentraland-mana-logo.png in Resources */,
+				492674A02A9FC364009E0566 /* bitcoin-btc-logo.png in Resources */,
+				492674812A9FC364009E0566 /* the-graph-grt-logo.png in Resources */,
+				492674982A9FC364009E0566 /* aptos-apt-logo.png in Resources */,
+				4926749A2A9FC364009E0566 /* arbitrum-arb-logo.png in Resources */,
+				4926746A2A9FC364009E0566 /* litecoin-ltc-logo.png in Resources */,
+				492674802A9FC364009E0566 /* kava-kava-logo.png in Resources */,
+				492674B32A9FC364009E0566 /* toncoin-ton-logo.png in Resources */,
+				492674A72A9FC364009E0566 /* bnb-bnb-logo.png in Resources */,
+				492674952A9FC364009E0566 /* ethereum-eth-logo.png in Resources */,
+				4926746C2A9FC364009E0566 /* bone-shibaswap-bone-logo.png in Resources */,
+				492674682A9FC364009E0566 /* the-sandbox-sand-logo.png in Resources */,
+				492674742A9FC364009E0566 /* filecoin-fil-logo.png in Resources */,
+				492674822A9FC364009E0566 /* background.jpg in Resources */,
+				492674B72A9FC364009E0566 /* injective-inj-logo.png in Resources */,
+				492674672A9FC364009E0566 /* iota-miota-logo.png in Resources */,
+				492674B62A9FC364009E0566 /* dydx-dydx-logo.png in Resources */,
+				492674712A9FC364009E0566 /* gemini-dollar-gusd-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +552,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */,
-				49507DC32A9D354F003F3A93 /* FlipAnimation.swift in Sources */,
 				4958992B2A96965E004D6E64 /* ViewController.swift in Sources */,
 				495899272A96965E004D6E64 /* AppDelegate.swift in Sources */,
 				495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */,
@@ -559,7 +759,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4958991E2A96965E004D6E64 /* Build configuration list for PBXProject "Milestone28-30" */ = {
+		4958991E2A96965E004D6E64 /* Build configuration list for PBXProject "Match_cards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				495899352A96965E004D6E64 /* Debug */,

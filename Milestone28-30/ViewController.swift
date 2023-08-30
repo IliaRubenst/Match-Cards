@@ -19,7 +19,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     var cellCounter: Int!
     var firstOpenCardIndex: IndexPath?
     var isReset = false
-    var stupidIndex: IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +63,9 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if openCardCell.count < 2 && cards[indexPath.item].status == .normal {
+        if openCardCell.count < 2 {
             guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
             let path = cards[indexPath.row]
-            stupidIndex = indexPath
             openCardCell.append(cell)
             cell.counter = openCardCell.count
             
@@ -84,9 +82,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             
             path.status = .open
             pressCard(indexPath: indexPath)
-//            path.change()
             setBackSide()
-            matchBothSide()
             allMatch()
             
         }
@@ -116,13 +112,9 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         
         firstOpenCardIndex = nil
     }
-    
-//    func stupidReset() {
-//        let check = collectionView.cellForItem(at: stupidIndex!) as? CardCell
-//        check?.newGameReset()
-//    }
-//
+
     @objc func createGameCards() {
+        loadImage()
         var cutShuffledCards = Array(cards[0 ..< cardsAmount])
         cutShuffledCards.forEach {
             cutShuffledCards.append(Card(name: $0.name, frontSide: $0.frontSide!, backSide: $0.backSide!))
@@ -131,7 +123,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         cards = cutShuffledCards.shuffled()
         openCard.removeAll()
         openCardCell.removeAll()
-        loadImage()
+
         collectionView.reloadData()
     }
 
@@ -144,12 +136,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             path.status = .open
             openCard.append(nameCardInArray)
         } else if path.status == .open && openCard.contains(nameCardInArray) {
-            for card in cards where card.status == .open {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                    card.status = .match
-                }
-            }
-            
             openCard.removeAll()
             openCardCell.removeAll()
         }
@@ -164,19 +150,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
                     card.status = .normal
                     card.backSide = UIImage(named: "question-mark.png")
                     self.openCardCell.removeAll()
-//                    self.collectionView.reloadData()
-                }
-            }
-        }
-    }
-    
-    func matchBothSide() {
-        if match.count >= 1 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
-                for card in self.cards where card.status == .match  {
-                    card.backSide = UIImage(named: "match-log.png")
-                    card.frontSide = UIImage(named: "match-log.png")
-//                    self.collectionView.reloadData()
                 }
             }
         }
