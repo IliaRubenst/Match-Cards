@@ -123,11 +123,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 //    }
 //
     @objc func createGameCards() {
-        loadImage()
-        if stupidIndex != nil {
-//            stupidReset()
-        }
-
         var cutShuffledCards = Array(cards[0 ..< cardsAmount])
         cutShuffledCards.forEach {
             cutShuffledCards.append(Card(name: $0.name, frontSide: $0.frontSide!, backSide: $0.backSide!))
@@ -136,6 +131,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         cards = cutShuffledCards.shuffled()
         openCard.removeAll()
         openCardCell.removeAll()
+        loadImage()
         collectionView.reloadData()
     }
 
@@ -156,9 +152,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             
             openCard.removeAll()
             openCardCell.removeAll()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            self.collectionView.reloadData()
         }
     }
 
