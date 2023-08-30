@@ -8,37 +8,39 @@
 import UIKit
 
 class ViewController: UICollectionViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate, UICollectionViewDelegateFlowLayout {
-    
-    var cards = [Card]()
-    
-    let countCells = 4
+
+    let amountCells = 4
     let offSet: CGFloat = 4.0
     var cardsAmount: Int!
+    var cards = [Card]()
     var openCard = String()
     var match = [Int]()
     var openCardCell = [CardCell]()
+    var cellCounter: Int!
+    var firstOpenCardIndex: IndexPath?
+    var isReset = false
+    var stupidIndex: IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         createGameCards()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New Game", image: nil, target: self, action: #selector(newGame))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset cards", style: .plain, target: self, action: #selector(createGameCards))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset cards", style: .plain, target: self, action: #selector(createGameCards))
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cards.count
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let frameCV = collectionView.frame
         
-        let widthCell = frameCV.width / CGFloat(countCells)
+        let widthCell = frameCV.width / CGFloat(amountCells)
         let heightCell = widthCell
         
-        let spacing = CGFloat((countCells + 2)) * offSet / CGFloat(countCells)
+        let spacing = CGFloat((amountCells + 2)) * offSet / CGFloat(amountCells)
         return CGSize(width: widthCell - spacing, height: heightCell - (offSet * 3))
     }
     
@@ -64,22 +66,68 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if openCardCell.count < 2 && cards[indexPath.item].status == .normal {
             guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-        openCardCell.append(cell)
-            let path = cards[indexPath.item]
+            let path = cards[indexPath.row]
+            stupidIndex = indexPath
+            openCardCell.append(cell)
+            cell.counter = openCardCell.count
             
+            if !path.isFlipped {
+                cell.flipCard(path)
+                path.isFlipped = true
+                
+                if firstOpenCardIndex == nil {
+                    firstOpenCardIndex = indexPath
+                } else {
+                    flipOpenCard(indexPath)
+                }
+            }
             
             path.status = .open
-            
             pressCard(indexPath: indexPath)
             path.change()
             setBackSide()
             matchBothSide()
             allMatch()
+            
         }
     }
     
+    func flipOpenCard(_ secondOpenCardIndex: IndexPath) {
+        let cardOne = cards[firstOpenCardIndex!.row]
+        let cardTwo = cards[secondOpenCardIndex.row]
+        
+        let cardOneCell = collectionView.cellForItem(at: firstOpenCardIndex!) as? CardCell
+        let cardTwoCell = collectionView.cellForItem(at: secondOpenCardIndex) as? CardCell
+        
+        if cardOne.frontSide == cardTwo.frontSide {
+            cardOne.status = .match
+            cardTwo.status = .match
+            match.append(1)
+            
+            cardOneCell?.removeCell()
+            cardTwoCell?.removeCell()
+        } else {
+            cardOne.isFlipped = false
+            cardTwo.isFlipped = false
+            
+            cardOneCell?.flipBack()
+            cardTwoCell?.flipBack()
+        }
+        
+        firstOpenCardIndex = nil
+    }
+    
+//    func stupidReset() {
+//        let check = collectionView.cellForItem(at: stupidIndex!) as? CardCell
+//        check?.newGameReset()
+//    }
+//
     @objc func createGameCards() {
         loadImage()
+        if stupidIndex != nil {
+//            stupidReset()
+        }
+
         var cutShuffledCards = Array(cards[0 ..< cardsAmount])
         cutShuffledCards.forEach {
             cutShuffledCards.append(Card(name: $0.name, frontSide: $0.frontSide!, backSide: $0.backSide!))
@@ -90,6 +138,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         openCardCell.removeAll()
         collectionView.reloadData()
     }
+
     
     func pressCard(indexPath: IndexPath) {
         let nameCardInArray = cards[indexPath.row].name
@@ -100,28 +149,29 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             openCard.append(nameCardInArray)
         } else if path.status == .open && openCard.contains(nameCardInArray) {
             for card in cards where card.status == .open {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    card.status = .match
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                    card.status = .match
                 }
-                match.append(1)
             }
             
             openCard.removeAll()
             openCardCell.removeAll()
         }
-        
-        collectionView.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.collectionView.reloadData()
+        }
     }
 
     func setBackSide() {
         if openCard.count >= 72 {
+            cellCounter = 2
             openCard.removeAll()
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 for card in self.cards where card.status != .match  {
                     card.status = .normal
                     card.backSide = UIImage(named: "question-mark.png")
                     self.openCardCell.removeAll()
-                    self.collectionView.reloadData()
+//                    self.collectionView.reloadData()
                 }
             }
         }
@@ -133,21 +183,21 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
                 for card in self.cards where card.status == .match  {
                     card.backSide = UIImage(named: "match-log.png")
                     card.frontSide = UIImage(named: "match-log.png")
-                    self.collectionView.reloadData()
+//                    self.collectionView.reloadData()
                 }
             }
         }
     }
     
     func allMatch() {
-        if (match.count / 2) == cardsAmount! {
-            let congratulation = UIAlertController(title: "Congratulations", message: "You guess all cards", preferredStyle: .alert)
-            
-            congratulation.addAction(UIAlertAction(title: "Ты крутой", style: .default) { [weak self] _ in
-                self?.newGame()
-            })
-            present(congratulation, animated: true)
-        }
+        if match.count == cardsAmount! {
+                let congratulation = UIAlertController(title: "Congratulations", message: "You guess all cards", preferredStyle: .alert)
+                
+                congratulation.addAction(UIAlertAction(title: "Ты крутой", style: .default) { [weak self] _ in
+                    self?.newGame()
+                })
+                present(congratulation, animated: true)
+            }
     }
     
     @objc func newGame() {
