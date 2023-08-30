@@ -27,9 +27,9 @@ class Card: NSObject {
         self.backSide = backSide
     }
     
-    func change() {
-        if status == .open {
-            backSide = UIImage(named: "match-log.png")
-        }
-    }
+//    func change() {
+//        if status == .open {
+//            backSide = UIImage(named: "match-log.png")
+//        }
+//    }
 }

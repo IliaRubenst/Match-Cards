@@ -38,6 +38,12 @@ class CardCell: UICollectionViewCell {
     
     func removeCell() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) { [self] in
+            UIView.animate(withDuration: 0.8) {
+                self.backImage.frame = CGRect(x: 45, y: 45, width: 1, height: 1)
+                self.fontImage.frame = CGRect(x: 45, y: 45, width: 1, height: 1)
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) { [self] in
             backImage.alpha = 0
             fontImage.alpha = 0
         }

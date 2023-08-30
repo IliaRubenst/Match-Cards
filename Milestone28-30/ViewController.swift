@@ -84,7 +84,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             
             path.status = .open
             pressCard(indexPath: indexPath)
-            path.change()
+//            path.change()
             setBackSide()
             matchBothSide()
             allMatch()
@@ -191,13 +191,15 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     
     func allMatch() {
         if match.count == cardsAmount! {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) { [self] in
                 let congratulation = UIAlertController(title: "Congratulations", message: "You guess all cards", preferredStyle: .alert)
                 
-                congratulation.addAction(UIAlertAction(title: "Ты крутой", style: .default) { [weak self] _ in
+                congratulation.addAction(UIAlertAction(title: "You are awesome", style: .default) { [weak self] _ in
                     self?.newGame()
                 })
                 present(congratulation, animated: true)
             }
+        }
     }
     
     @objc func newGame() {
