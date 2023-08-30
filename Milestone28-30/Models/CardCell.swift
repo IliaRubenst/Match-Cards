@@ -48,9 +48,4 @@ class CardCell: UICollectionViewCell {
             fontImage.alpha = 0
         }
     }
-    
-    func newGameReset() {
-        backImage.alpha = 1
-        fontImage.alpha = 1
-    }
 }

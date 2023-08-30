@@ -105,6 +105,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         } else {
             cardOne.isFlipped = false
             cardTwo.isFlipped = false
+            cardOne.status = .normal
+            cardTwo.status = .normal
             
             cardOneCell?.flipBack()
             cardTwoCell?.flipBack()
@@ -148,7 +150,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 for card in self.cards where card.status != .match  {
                     card.status = .normal
-                    card.backSide = UIImage(named: "question-mark.png")
                     self.openCardCell.removeAll()
                 }
             }
