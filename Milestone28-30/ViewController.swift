@@ -69,7 +69,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             openCardCell.append(cell)
             cell.counter = openCardCell.count
             
-            if !path.isFlipped {
+            if !path.isFlipped && path.status != .match {
                 cell.flipCard(path)
                 path.isFlipped = true
                 
@@ -199,3 +199,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         return paths[0]
     }
 }
+
+
+

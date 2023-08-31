@@ -22,7 +22,6 @@
 		492674722A9FC364009E0566 /* decentraland-mana-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674152A9FC363009E0566 /* decentraland-mana-logo.png */; };
 		492674732A9FC364009E0566 /* apenft-nft-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674162A9FC363009E0566 /* apenft-nft-logo.png */; };
 		492674742A9FC364009E0566 /* filecoin-fil-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674172A9FC363009E0566 /* filecoin-fil-logo.png */; };
-		492674752A9FC364009E0566 /* back_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674182A9FC363009E0566 /* back_log.png */; };
 		492674762A9FC364009E0566 /* maker-mkr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492674192A9FC363009E0566 /* maker-mkr-logo.png */; };
 		492674772A9FC364009E0566 /* curve-dao-token-crv-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741A2A9FC363009E0566 /* curve-dao-token-crv-logo.png */; };
 		492674782A9FC364009E0566 /* monero-xmr-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926741B2A9FC363009E0566 /* monero-xmr-logo.png */; };
@@ -109,6 +108,7 @@
 		495899332A96965E004D6E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495899312A96965E004D6E64 /* LaunchScreen.storyboard */; };
 		496E27C52A9719530090CA4A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C42A9719530090CA4A /* Card.swift */; };
 		496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C82A972CFB0090CA4A /* CardCell.swift */; };
+		4997C1BE2AA064FF00641105 /* CardsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997C1BD2AA064FF00641105 /* CardsHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,7 +127,6 @@
 		492674152A9FC363009E0566 /* decentraland-mana-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "decentraland-mana-logo.png"; sourceTree = "<group>"; };
 		492674162A9FC363009E0566 /* apenft-nft-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apenft-nft-logo.png"; sourceTree = "<group>"; };
 		492674172A9FC363009E0566 /* filecoin-fil-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filecoin-fil-logo.png"; sourceTree = "<group>"; };
-		492674182A9FC363009E0566 /* back_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_log.png; sourceTree = "<group>"; };
 		492674192A9FC363009E0566 /* maker-mkr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maker-mkr-logo.png"; sourceTree = "<group>"; };
 		4926741A2A9FC363009E0566 /* curve-dao-token-crv-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "curve-dao-token-crv-logo.png"; sourceTree = "<group>"; };
 		4926741B2A9FC363009E0566 /* monero-xmr-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monero-xmr-logo.png"; sourceTree = "<group>"; };
@@ -216,6 +215,7 @@
 		495899342A96965E004D6E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496E27C42A9719530090CA4A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		496E27C82A972CFB0090CA4A /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4997C1BD2AA064FF00641105 /* CardsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +248,7 @@
 		49507D442A9CCA41003F3A93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4997C1BD2AA064FF00641105 /* CardsHeader.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,7 +301,6 @@
 				4926744F2A9FC363009E0566 /* arweave-ar-logo.png */,
 				492674112A9FC363009E0566 /* avalanche-avax-logo.png */,
 				492674502A9FC363009E0566 /* axie-infinity-axs-logo.png */,
-				492674182A9FC363009E0566 /* back_log.png */,
 				492674252A9FC363009E0566 /* background.jpg */,
 				492674572A9FC363009E0566 /* basic-attention-token-bat-logo.png */,
 				492674432A9FC363009E0566 /* bitcoin-btc-logo.png */,
@@ -469,7 +469,6 @@
 				4926746E2A9FC364009E0566 /* avalanche-avax-logo.png in Resources */,
 				492674872A9FC364009E0566 /* solana-sol-logo.png in Resources */,
 				492674882A9FC364009E0566 /* algorand-algo-logo.png in Resources */,
-				492674752A9FC364009E0566 /* back_log.png in Resources */,
 				492674662A9FC364009E0566 /* chainlink-link-logo.png in Resources */,
 				492674AD2A9FC364009E0566 /* axie-infinity-axs-logo.png in Resources */,
 				492674A42A9FC364009E0566 /* apecoin-ape-ape-logo.png in Resources */,
@@ -552,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */,
+				4997C1BE2AA064FF00641105 /* CardsHeader.swift in Sources */,
 				4958992B2A96965E004D6E64 /* ViewController.swift in Sources */,
 				495899272A96965E004D6E64 /* AppDelegate.swift in Sources */,
 				495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */,
