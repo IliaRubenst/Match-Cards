@@ -108,7 +108,6 @@
 		495899332A96965E004D6E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495899312A96965E004D6E64 /* LaunchScreen.storyboard */; };
 		496E27C52A9719530090CA4A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C42A9719530090CA4A /* Card.swift */; };
 		496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E27C82A972CFB0090CA4A /* CardCell.swift */; };
-		4997C1BE2AA064FF00641105 /* CardsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997C1BD2AA064FF00641105 /* CardsHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,7 +214,6 @@
 		495899342A96965E004D6E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496E27C42A9719530090CA4A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		496E27C82A972CFB0090CA4A /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		4997C1BD2AA064FF00641105 /* CardsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +239,7 @@
 		49507D432A9CCA30003F3A93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4958992C2A96965E004D6E64 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,7 +247,8 @@
 		49507D442A9CCA41003F3A93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4997C1BD2AA064FF00641105 /* CardsHeader.swift */,
+				49507D402A9CC992003F3A93 /* SettingViewController.swift */,
+				4958992A2A96965E004D6E64 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 		4958991A2A96965E004D6E64 = {
 			isa = PBXGroup;
 			children = (
-				495899252A96965E004D6E64 /* Milestone28-30 */,
+				495899252A96965E004D6E64 /* Match_cards */,
 				495899242A96965E004D6E64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -269,14 +269,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		495899252A96965E004D6E64 /* Milestone28-30 */ = {
+		495899252A96965E004D6E64 /* Match_cards */ = {
 			isa = PBXGroup;
 			children = (
 				495899262A96965E004D6E64 /* AppDelegate.swift */,
 				495899282A96965E004D6E64 /* SceneDelegate.swift */,
-				49507D402A9CC992003F3A93 /* SettingViewController.swift */,
-				4958992A2A96965E004D6E64 /* ViewController.swift */,
-				4958992C2A96965E004D6E64 /* Main.storyboard */,
 				49507D422A9CC9FC003F3A93 /* Models */,
 				49507D432A9CCA30003F3A93 /* Views */,
 				49507D442A9CCA41003F3A93 /* Controllers */,
@@ -285,7 +282,7 @@
 				495899342A96965E004D6E64 /* Info.plist */,
 				498093302A97494400AE8F33 /* Content */,
 			);
-			path = "Milestone28-30";
+			path = Match_cards;
 			sourceTree = "<group>";
 		};
 		498093302A97494400AE8F33 /* Content */ = {
@@ -551,7 +548,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */,
-				4997C1BE2AA064FF00641105 /* CardsHeader.swift in Sources */,
 				4958992B2A96965E004D6E64 /* ViewController.swift in Sources */,
 				495899272A96965E004D6E64 /* AppDelegate.swift in Sources */,
 				495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */,
@@ -704,7 +700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Milestone28-30/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "/Users/ilia/Match-Cards/Match_cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -734,7 +730,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Milestone28-30/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "/Users/ilia/Match-Cards/Match_cards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
