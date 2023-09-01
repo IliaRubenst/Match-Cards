@@ -26,7 +26,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         createGameCards()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New Game", image: nil, target: self, action: #selector(newGame))
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset cards", style: .plain, target: self, action: #selector(createGameCards))
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -84,8 +83,25 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             pressCard(indexPath: indexPath)
             setBackSide()
             allMatch()
-            
         }
+    }
+    
+    @objc func createGameCards() {
+        loadImage()
+        var cutShuffledCards = Array(cards[0 ..< cardsAmount])
+        cutShuffledCards.forEach {
+            cutShuffledCards.append(Card(name: $0.name, frontSide: $0.frontSide!, backSide: $0.backSide!))
+        }
+        
+        cards = cutShuffledCards.shuffled()
+        openCard.removeAll()
+        openCardCell.removeAll()
+
+        collectionView.reloadData()
+    }
+    
+    @objc func newGame() {
+        _ = navigationController?.popToRootViewController(animated: true)
     }
     
     func flipOpenCard(_ secondOpenCardIndex: IndexPath) {
@@ -114,21 +130,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         
         firstOpenCardIndex = nil
     }
-
-    @objc func createGameCards() {
-        loadImage()
-        var cutShuffledCards = Array(cards[0 ..< cardsAmount])
-        cutShuffledCards.forEach {
-            cutShuffledCards.append(Card(name: $0.name, frontSide: $0.frontSide!, backSide: $0.backSide!))
-        }
-        
-        cards = cutShuffledCards.shuffled()
-        openCard.removeAll()
-        openCardCell.removeAll()
-
-        collectionView.reloadData()
-    }
-
     
     func pressCard(indexPath: IndexPath) {
         let nameCardInArray = cards[indexPath.row].name
@@ -167,10 +168,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
                 present(congratulation, animated: true)
             }
         }
-    }
-    
-    @objc func newGame() {
-        _ = navigationController?.popToRootViewController(animated: true)
     }
     
     func loadImage() {

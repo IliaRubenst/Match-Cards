@@ -48,17 +48,14 @@ class SettingViewController: UIViewController {
     
     @IBAction func firstButtonAction(_ sender: UIButton) {
         cardAmount = 6
-        
         goGame()
     }
     @IBAction func secondButtonAction(_ sender: UIButton) {
         cardAmount = 10
-
         goGame()
     }
     @IBAction func thirdButtonAction(_ sender: UIButton) {
         cardAmount = 14
-
         goGame()
     }
     
