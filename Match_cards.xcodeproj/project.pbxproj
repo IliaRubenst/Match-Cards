@@ -204,7 +204,7 @@
 		492674642A9FC364009E0566 /* mina-mina-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mina-mina-logo.png"; sourceTree = "<group>"; };
 		492674652A9FC364009E0566 /* kucoin-token-kcs-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kucoin-token-kcs-logo.png"; sourceTree = "<group>"; };
 		49507D402A9CC992003F3A93 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		495899232A96965E004D6E64 /* Milestone28-30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone28-30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		495899232A96965E004D6E64 /* Match_cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Match_cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495899262A96965E004D6E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495899282A96965E004D6E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4958992A2A96965E004D6E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -264,7 +264,7 @@
 		495899242A96965E004D6E64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				495899232A96965E004D6E64 /* Milestone28-30.app */,
+				495899232A96965E004D6E64 /* Match_cards.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,9 +387,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		495899222A96965E004D6E64 /* Milestone28-30 */ = {
+		495899222A96965E004D6E64 /* Match_cards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 495899372A96965E004D6E64 /* Build configuration list for PBXNativeTarget "Milestone28-30" */;
+			buildConfigurationList = 495899372A96965E004D6E64 /* Build configuration list for PBXNativeTarget "Match_cards" */;
 			buildPhases = (
 				4958991F2A96965E004D6E64 /* Sources */,
 				495899202A96965E004D6E64 /* Frameworks */,
@@ -399,9 +399,9 @@
 			);
 			dependencies = (
 			);
-			name = "Milestone28-30";
+			name = Match_cards;
 			productName = "Milestone28-30";
-			productReference = 495899232A96965E004D6E64 /* Milestone28-30.app */;
+			productReference = 495899232A96965E004D6E64 /* Match_cards.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -432,7 +432,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				495899222A96965E004D6E64 /* Milestone28-30 */,
+				495899222A96965E004D6E64 /* Match_cards */,
 			);
 		};
 /* End PBXProject section */
@@ -764,7 +764,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		495899372A96965E004D6E64 /* Build configuration list for PBXNativeTarget "Milestone28-30" */ = {
+		495899372A96965E004D6E64 /* Build configuration list for PBXNativeTarget "Match_cards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				495899382A96965E004D6E64 /* Debug */,
