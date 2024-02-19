@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate, UICollectionViewDelegateFlowLayout {
+final class GameViewController: UICollectionViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate, UICollectionViewDelegateFlowLayout {
 
     let amountCells = 4
     let offSet: CGFloat = 4.0
@@ -17,15 +17,29 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     var match = [Int]()
     var openCardCell = [CardCell]()
     var cellCounter: Int!
-    var firstOpenCardIndex: IndexPath?
-    var isReset = false
+    var firstOpenCardIndex: IndexPath?    
+    
+    var scoreLabel: UILabel = {
+         let label = UILabel()
+         label.textAlignment = .center
+         label.font = UIFont.boldSystemFont(ofSize: 38)
+         return label
+     }()
+    
+    var score: Int = 0 {
+        didSet {
+            updateScoreLabel()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         createGameCards()
+        configureScoreLabel(with: scoreLabel)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "New Game", image: nil, target: self, action: #selector(newGame))
+        navigationController?.navigationBar.tintColor = UIColor.systemBlue
+        navigationController?.navigationBar.barTintColor = UIColor.white
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,10 +48,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let frameCV = collectionView.frame
-        
         let widthCell = frameCV.width / CGFloat(amountCells)
         let heightCell = widthCell
-        
         let spacing = CGFloat((amountCells + 2)) * offSet / CGFloat(amountCells)
         return CGSize(width: widthCell - spacing, height: heightCell - (offSet * 3))
     }
@@ -46,18 +58,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Card", for: indexPath) as? CardCell else {
             fatalError("Unable to dequeue CardCell.")
         }
-        cell.backImage.image = cards[indexPath.row].backSide
-        cell.fontImage.image = cards[indexPath.row].frontSide
-        
-        cell.backImage.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
-        cell.backImage.layer.borderWidth = 2
-        cell.backImage.layer.cornerRadius = 3
-        cell.layer.cornerRadius = 5
-
-        cell.fontImage.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
-        cell.fontImage.layer.borderWidth = 2
-        cell.fontImage.layer.cornerRadius = 3
-        cell.layer.cornerRadius = 5
+        let card = cards[indexPath.row]
+        cell.configure(with: card)
         return cell
     }
     
@@ -70,7 +72,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             
             if !path.isFlipped && path.status != .match {
                 cell.flipCard(path)
-                path.isFlipped = true
+                path.flip()
                 
                 if firstOpenCardIndex == nil {
                     firstOpenCardIndex = indexPath
@@ -79,7 +81,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
                 }
             }
             
-            path.status = .open
+            path.updateStatus(to: .open)
             pressCard(indexPath: indexPath)
             setBackSide()
             allMatch()
@@ -92,19 +94,15 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         cutShuffledCards.forEach {
             cutShuffledCards.append(Card(name: $0.name, frontSide: $0.frontSide!, backSide: $0.backSide!))
         }
-        
         cards = cutShuffledCards.shuffled()
         openCard.removeAll()
         openCardCell.removeAll()
-
         collectionView.reloadData()
     }
     
-    @objc func newGame() {
-        _ = navigationController?.popToRootViewController(animated: true)
-    }
+    @objc func newGame() { _ = navigationController?.popToRootViewController(animated: true) }
     
-    func flipOpenCard(_ secondOpenCardIndex: IndexPath) {
+    private func flipOpenCard(_ secondOpenCardIndex: IndexPath) {
         let cardOne = cards[firstOpenCardIndex!.row]
         let cardTwo = cards[secondOpenCardIndex.row]
         
@@ -118,20 +116,24 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             
             cardOneCell?.removeCell()
             cardTwoCell?.removeCell()
+            
+            updateScore(by: 2)
         } else {
-            cardOne.isFlipped = false
-            cardTwo.isFlipped = false
-            cardOne.status = .normal
-            cardTwo.status = .normal
+            cardOne.flip()
+            cardTwo.flip()
+            cardOne.updateStatus(to: .normal)
+            cardTwo.updateStatus(to: .normal)
             
             cardOneCell?.flipBack()
             cardTwoCell?.flipBack()
+            
+            updateScore(by: -1)
         }
         
         firstOpenCardIndex = nil
     }
     
-    func pressCard(indexPath: IndexPath) {
+    private func pressCard(indexPath: IndexPath) {
         let nameCardInArray = cards[indexPath.row].name
         let path = cards[indexPath.row]
         
@@ -144,7 +146,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         }
     }
 
-    func setBackSide() {
+    private func setBackSide() {
         if openCard.count >= 72 {
             cellCounter = 2
             openCard.removeAll()
@@ -157,10 +159,10 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         }
     }
     
-    func allMatch() {
+    private func allMatch() {
         if match.count == cardsAmount! {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) { [self] in
-                let congratulation = UIAlertController(title: "Congratulations", message: "You guess all cards", preferredStyle: .alert)
+                let congratulation = UIAlertController(title: "Congratulations!", message: "You guessed all cards", preferredStyle: .alert)
                 
                 congratulation.addAction(UIAlertAction(title: "You are awesome", style: .default) { [weak self] _ in
                     self?.newGame()
@@ -170,7 +172,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         }
     }
     
-    func loadImage() {
+    private func loadImage() {
         let fm = FileManager.default
         guard let path = Bundle.main.resourcePath else { fatalError("Unable to dequeue CardCell.") }
         var rawCards = [Card]()
@@ -191,11 +193,34 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         }
     }
     
-    func getDocumentsDirectory() -> URL {
+    private func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
+    
+    private func configureScoreLabel(with label: UILabel) {
+        view.addSubview(scoreLabel)
+        
+        let attributes: [NSAttributedString.Key:Any] = [
+            .strokeWidth: 5.0,
+            .strokeColor: UIColor.systemBlue
+        ]
+        
+        let attributedString = NSAttributedString(string:  "Score: 0", attributes: attributes)
+        scoreLabel.attributedText = attributedString
+        
+        scoreLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            scoreLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scoreLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scoreLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20)
+        ])
+    }
+    
+    private func updateScoreLabel() { scoreLabel.text = "Score: \(score)" }
+    
+    private func updateScore(by value: Int) {
+        score += value
+        updateScoreLabel()
+    }
 }
-
-
-

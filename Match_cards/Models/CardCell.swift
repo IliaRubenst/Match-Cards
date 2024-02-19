@@ -8,11 +8,26 @@
 import UIKit
 
 class CardCell: UICollectionViewCell {
+    
     @IBOutlet var fontImage: UIImageView!
     @IBOutlet var backImage: UIImageView!
-    var card = ViewController()
     
     var counter = 0
+    
+    func configure(with cardModel: Card) {
+        backImage.image = cardModel.backSide
+        fontImage.image = cardModel.frontSide
+        
+        backImage.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
+        backImage.layer.borderWidth = 2
+        backImage.layer.cornerRadius = 3
+        layer.cornerRadius = 5
+
+        fontImage.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
+        fontImage.layer.borderWidth = 2
+        fontImage.layer.cornerRadius = 3
+        layer.cornerRadius = 5
+    }
 
     func flipCard(_ cardModel: Card) {
         let isFlipped = cardModel.isFlipped

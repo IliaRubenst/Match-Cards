@@ -102,7 +102,7 @@
 		49507D412A9CC992003F3A93 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507D402A9CC992003F3A93 /* SettingViewController.swift */; };
 		495899272A96965E004D6E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495899262A96965E004D6E64 /* AppDelegate.swift */; };
 		495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495899282A96965E004D6E64 /* SceneDelegate.swift */; };
-		4958992B2A96965E004D6E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958992A2A96965E004D6E64 /* ViewController.swift */; };
+		4958992B2A96965E004D6E64 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958992A2A96965E004D6E64 /* GameViewController.swift */; };
 		4958992E2A96965E004D6E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4958992C2A96965E004D6E64 /* Main.storyboard */; };
 		495899302A96965E004D6E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4958992F2A96965E004D6E64 /* Assets.xcassets */; };
 		495899332A96965E004D6E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495899312A96965E004D6E64 /* LaunchScreen.storyboard */; };
@@ -207,7 +207,7 @@
 		495899232A96965E004D6E64 /* Match_cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Match_cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495899262A96965E004D6E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495899282A96965E004D6E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4958992A2A96965E004D6E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4958992A2A96965E004D6E64 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		4958992D2A96965E004D6E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4958992F2A96965E004D6E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495899322A96965E004D6E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				49507D402A9CC992003F3A93 /* SettingViewController.swift */,
-				4958992A2A96965E004D6E64 /* ViewController.swift */,
+				4958992A2A96965E004D6E64 /* GameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -548,7 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E27C92A972CFB0090CA4A /* CardCell.swift in Sources */,
-				4958992B2A96965E004D6E64 /* ViewController.swift in Sources */,
+				4958992B2A96965E004D6E64 /* GameViewController.swift in Sources */,
 				495899272A96965E004D6E64 /* AppDelegate.swift in Sources */,
 				495899292A96965E004D6E64 /* SceneDelegate.swift in Sources */,
 				496E27C52A9719530090CA4A /* Card.swift in Sources */,

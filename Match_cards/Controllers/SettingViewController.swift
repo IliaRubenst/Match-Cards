@@ -7,19 +7,23 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+final class SettingViewController: UIViewController {
+    
     @IBOutlet var mainLabel: UILabel!
-    @IBOutlet var firstButton: UIButton!
-    @IBOutlet var secondButton: UIButton!
-    @IBOutlet var thirdButton: UIButton!
+    @IBOutlet var easyButton: UIButton!
+    @IBOutlet var normalButton: UIButton!
+    @IBOutlet var HardButton: UIButton!
     @IBOutlet var background: UIImageView!
     
-    var viewController = ViewController()
+    var viewController = GameViewController()
     var cardAmount: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
+    }
+    
+    private func setupUI() {
         background.image = UIImage(named: "background")
         
         mainLabel.text = "Choose difficultу"
@@ -28,21 +32,14 @@ class SettingViewController: UIViewController {
         mainLabel.layer.masksToBounds = true
         mainLabel.layer.cornerRadius = 7
         
-        firstButton.setTitle("Easy", for: .normal)
-        firstButton.tintColor = .white
-        firstButton.backgroundColor = .systemBlue
-        firstButton.layer.cornerRadius = 7
-        
-        secondButton.setTitle("Normal", for: .normal)
-        secondButton.tintColor = .white
-        secondButton.backgroundColor = .systemBlue
-        secondButton.layer.cornerRadius = 7
-        
-        thirdButton.setTitle("Hard", for: .normal)
-        thirdButton.tintColor = .white
-        thirdButton.backgroundColor = .systemBlue
-        thirdButton.layer.cornerRadius = 7
-        
+        let buttons = [easyButton, normalButton, HardButton]
+        buttons.enumerated().forEach { index, button in
+            button?.setTitle(["Easy", "Normal", "Hard"][index], for: .normal)
+            button?.tintColor = .white
+            button?.backgroundColor = .systemBlue
+            button?.layer.cornerRadius = 7
+        }
+
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "New Game", style: .plain, target: nil, action: nil)
     }
     
@@ -59,8 +56,8 @@ class SettingViewController: UIViewController {
         goGame()
     }
     
-    func goGame() {
-        if let gameVC = self.storyboard?.instantiateViewController(identifier: "Game") as? ViewController {
+    private func goGame() {
+        if let gameVC = self.storyboard?.instantiateViewController(identifier: "Game") as? GameViewController {
             gameVC.modalPresentationStyle = .fullScreen
             gameVC.cardsAmount = cardAmount
             navigationController?.pushViewController(gameVC, animated: true)

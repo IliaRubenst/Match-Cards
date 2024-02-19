@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cer-jd-gsW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cer-jd-gsW">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="AeM-4k-deI">
             <objects>
-                <collectionViewController storyboardIdentifier="Game" id="0Or-5f-BZh" customClass="ViewController" customModule="Milestone28_30" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="Game" id="0Or-5f-BZh" customClass="GameViewController" customModule="Match_cards" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="m4e-3W-zWs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +25,7 @@
                             <inset key="sectionInset" minX="1" minY="1" maxX="1" maxY="1"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="Card" id="vAp-dd-xu6" customClass="CardCell" customModule="Milestone28_30" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="Card" id="vAp-dd-xu6" customClass="CardCell" customModule="Match_cards" customModuleProvider="target">
                                 <rect key="frame" x="1" y="1" width="120" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hyb-ID-lhe">
@@ -64,7 +65,7 @@
         <!--Setting View Controller-->
         <scene sceneID="l8E-5H-03A">
             <objects>
-                <viewController storyboardIdentifier="Setting" id="UDP-lJ-1lu" customClass="SettingViewController" customModule="Milestone28_30" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Setting" id="UDP-lJ-1lu" customClass="SettingViewController" customModule="Match_cards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vE3-FW-T7U">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,11 +123,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="UCw-Dm-hCS"/>
                     <connections>
+                        <outlet property="HardButton" destination="bdY-Tw-RRD" id="Xaj-w5-cat"/>
                         <outlet property="background" destination="K1f-uq-ToK" id="jJQ-7x-8Ws"/>
-                        <outlet property="firstButton" destination="Zds-Nj-NwL" id="mfD-D9-nR4"/>
+                        <outlet property="easyButton" destination="Zds-Nj-NwL" id="mfD-D9-nR4"/>
                         <outlet property="mainLabel" destination="Rvg-hG-6f6" id="iYI-eF-ack"/>
-                        <outlet property="secondButton" destination="xSA-0M-XOk" id="vhH-XW-UOP"/>
-                        <outlet property="thirdButton" destination="bdY-Tw-RRD" id="Xaj-w5-cat"/>
+                        <outlet property="normalButton" destination="xSA-0M-XOk" id="vhH-XW-UOP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHe-Bj-Qv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
