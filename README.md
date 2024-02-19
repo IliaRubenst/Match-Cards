@@ -38,5 +38,5 @@ Match Cards is my first pet project made from scratch. It is a simple memory-mat
 - Game Logic:
     The game logic includes functions like pressCard, flipOpenCard, setBackSide, and allMatch. These functions manage the gameplay mechanics, card interactions, and the progression of the game.
 
-![ezgif com-video-to-gif](https://github.com/IliaRubenst/Match-Cards/assets/131949404/b5d2d491-eabb-4664-a02f-3b7150bbd3ac)
+![MatchCards](https://github.com/IliaRubenst/Match-Cards/assets/131949404/a52cfa9c-ccfe-42aa-a853-e851de19b980)
 
